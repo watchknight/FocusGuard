@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusGuard Settings</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FocusGuard Settings</h1>
+            <a href="#" id="close-tab" class="back-link">Close Tab</a>
+        </header>
+
+        <section class="card">
+            <h2>Cooldown Duration</h2>
+            <p>Time before protection can be disabled</p>
+            <div class="form-group">
+                <label for="cooldown-select">Cooldown Duration (time before protection can be disabled):</label>
+                <select id="cooldown-select">
+                    <option value="3600000">1 hour</option>
+                    <option value="21600000">6 hours</option>
+                    <option value="43200000">12 hours</option>
+                    <option value="86400000">24 hours (default)</option>
+                    <option value="172800000">48 hours</option>
+                    <option value="259200000">72 hours</option>
+                    <option value="604800000">7 days</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Custom Blocklist</h2>
+            <div class="domain-input-group">
+                <input type="text" id="new-domain" placeholder="e.g. example.com">
+                <button id="add-domain-btn" class="btn btn-primary">Add Domain</button>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="import-btn" class="btn btn-secondary">Import</button>
+                <button id="export-btn" class="btn btn-secondary">Export</button>
+            </div>
+
+            <ul id="domain-list" class="domain-list">
+                <!-- Domains will be populated here -->
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>Total Blocked</h3>
+                    <p id="stat-total" class="stat-value">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Blocked Today</h3>
+                    <p id="stat-today" class="stat-value">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Blocked This Week</h3>
+                    <p id="stat-week" class="stat-value">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card about-section">
+            <h2>About & Maintenance</h2>
+            <p>Version 1.0.0 — FocusGuard</p>
+            <button id="reload-extension-btn" class="btn btn-secondary" style="margin-top: 10px;">↻ Reload Extension</button>
+        </section>
+    </div>
+
+    <!-- Import Modal -->
+    <div id="import-modal" class="modal">
+        <div class="modal-content">
+            <h2>Import Domains</h2>
+            <p>Paste domains here, one per line:</p>
+            <textarea id="import-textarea" rows="10" placeholder="example.com&#10;reddit.com"></textarea>
+            <div class="modal-actions">
+                <button id="cancel-import" class="btn btn-secondary">Cancel</button>
+                <button id="confirm-import" class="btn btn-primary">Import</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Settings saved successfully!</div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

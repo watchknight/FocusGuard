@@ -1,0 +1,12 @@
+{
+  "name": "focusguard-service",
+  "version": "1.0.0",
+  "description": "FocusGuard companion service — multi-layer tamper-resistant protection watchdog",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "FocusGuard",
+  "license": "MIT",
+  "dependencies": {}
+}

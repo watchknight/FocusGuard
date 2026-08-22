@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, initial-scale=1.0">
+  <title>FocusGuard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="emoji">🛡️</span> FocusGuard
+    </div>
+    <div class="settings-btn" id="settingsBtn" title="Settings">⚙️</div>
+  </header>
+
+  <main>
+    <section class="status-section">
+      <div class="status-indicator" id="statusIndicator"></div>
+      <h2 id="statusText">Protection ON</h2>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-box">
+        <div class="stat-value" id="blocksToday">0</div>
+        <div class="stat-label">Today</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-box">
+        <div class="stat-value" id="blocksWeek">0</div>
+        <div class="stat-label">This Week</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-box">
+        <div class="stat-value" id="blocksAllTime">0</div>
+        <div class="stat-label">All Time</div>
+      </div>
+    </section>
+
+    <section class="action-section">
+      <!-- State 1: Protection ON, No cooldown -->
+      <div id="stateActive" class="state-panel">
+        <button id="disableBtn" class="btn-subtle">Disable Protection</button>
+      </div>
+
+      <!-- State 2: Cooldown active -->
+      <div id="stateCooldown" class="state-panel hidden">
+        <div class="timer-display" id="cooldownTimer">00:00:00</div>
+        <button id="cancelBtn" class="btn-primary">Cancel Disable Request</button>
+      </div>
+
+      <!-- State 3: Protection OFF -->
+      <div id="stateDisabled" class="state-panel hidden">
+        <button id="enableBtn" class="btn-primary btn-large">Re-enable Protection</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="version">v1.0.0</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
