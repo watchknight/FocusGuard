@@ -67,12 +67,19 @@ function loadConfig() {
 }
 
 /**
- * Save config to disk.
+ * Save config to disk atomically.
  */
 function saveConfig(config) {
   ensureConfigDir();
+  const tmpFile = CONFIG_FILE + '.tmp';
   try {
-    fs.writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2), 'utf8');
+    fs.writeFileSync(tmpFile, JSON.stringify(config, null, 2), 'utf8');
+    try {
+      fs.renameSync(tmpFile, CONFIG_FILE);
+    } catch {
+      fs.copyFileSync(tmpFile, CONFIG_FILE);
+      try { fs.unlinkSync(tmpFile); } catch {}
+    }
   } catch (err) {
     console.error('[Cooldown] Failed to save config:', err.message);
   }
@@ -105,6 +112,13 @@ function processCooldown() {
  */
 function startCooldown(durationMs) {
   const config = loadConfig();
+
+  // If cooldown is already active and unexpired, do not overwrite or extend it
+  if (config.cooldownActive && config.cooldownEndTime > Date.now()) {
+    console.log(`[Cooldown] Cooldown already active — expires at ${new Date(config.cooldownEndTime).toISOString()}`);
+    return config;
+  }
+
   const duration = durationMs || config.cooldownDuration || DEFAULT_COOLDOWN_MS;
   const now = Date.now();
 

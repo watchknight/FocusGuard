@@ -63,10 +63,18 @@ async function parseJsonBody(req) {
 function getSafeOrigin(req) {
   const origin = req.headers.origin;
   if (!origin) return '*'; // System/CLI tools
-  if (origin.startsWith('chrome-extension://') || origin.startsWith('edge-extension://') || origin.includes('127.0.0.1') || origin.includes('localhost')) {
-    return origin;
+  try {
+    const u = new URL(origin);
+    if (u.protocol === 'chrome-extension:' || u.protocol === 'edge-extension:') {
+      return origin;
+    }
+    if (u.hostname === '127.0.0.1' || u.hostname === 'localhost') {
+      return origin;
+    }
+  } catch {
+    return null;
   }
-  return null; // Reject web pages
+  return null; // Reject external web pages
 }
 
 /**
@@ -86,6 +94,14 @@ function jsonResponse(res, statusCode, data, origin = '*') {
  * Handle incoming HTTP requests.
  */
 async function handleRequest(req, res) {
+  // Validate Host header to prevent DNS rebinding attacks
+  const host = req.headers.host;
+  if (host && !/^(127\.0\.0\.1|localhost)(:\d+)?$/.test(host)) {
+    res.writeHead(403, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: 'Forbidden: invalid Host header' }));
+    return;
+  }
+
   const url = new URL(req.url, `http://${HOST}:${PORT}`);
   const pathname = url.pathname;
   const method = req.method;

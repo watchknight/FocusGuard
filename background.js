@@ -269,10 +269,20 @@ async function updateBlockRules() {
  * cooldown period. Only after it expires will protection be disabled.
  */
 async function startCooldown() {
-  const { cooldownDuration } = await chrome.storage.local.get([
+  const data = await chrome.storage.local.get([
     'cooldownDuration',
+    'cooldownActive',
+    'cooldownEndTime',
   ]);
-  const duration = cooldownDuration || DEFAULT_COOLDOWN_MS;
+
+  if (data.cooldownActive && data.cooldownEndTime > Date.now()) {
+    console.log(
+      `[FocusGuard] Cooldown already active — expires at ${new Date(data.cooldownEndTime).toISOString()}`
+    );
+    return data.cooldownEndTime;
+  }
+
+  const duration = data.cooldownDuration || DEFAULT_COOLDOWN_MS;
   const now = Date.now();
   const cooldownEndTime = now + duration;
 
