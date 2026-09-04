@@ -218,7 +218,7 @@ foreach ($browser in $browsers) {
     # (https://clients2.google.com/service/update2/crx) to force-install silently.
     $isDomainJoined = (Get-CimInstance -ClassName Win32_ComputerSystem -ErrorAction SilentlyContinue).PartOfDomain
     if ($isDomainJoined) {
-        $extId = "fikmkkdbhncddfijgnhoeakicaahcioh"
+        $extId = if ($ExtensionId) { $ExtensionId } else { "fikmkkdbhncddfijgnhoeakicaahcioh" }
         $forcelistPath = Join-Path $browser.Path "ExtensionInstallForcelist"
         if (-not (Test-Path $forcelistPath)) { New-Item -Path $forcelistPath -Force | Out-Null }
         Set-ItemProperty -Path $forcelistPath -Name "1" -Value "$($extId);http://127.0.0.1:7575/update.xml" -Type String -Force
