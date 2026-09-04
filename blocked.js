@@ -157,7 +157,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Send trackBlock message to background to increment counters
   if (chrome?.runtime?.sendMessage) {
-    chrome.runtime.sendMessage({ action: 'trackBlock', domain: domain });
+    try {
+      const p = chrome.runtime.sendMessage({ action: 'trackBlock', domain: domain });
+      if (p && typeof p.catch === 'function') {
+        p.catch(() => {
+          // Suppress benign connection errors if service worker is sleeping
+        });
+      }
+    } catch (e) {
+      // Ignore synchronous errors
+    }
   }
 
   // 5. "Go Back" button

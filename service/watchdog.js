@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const hostsManager = require('./hosts-manager');
 const dnsManager = require('./dns-manager');
 const policies = require('./policies');
@@ -19,6 +20,18 @@ const CHECK_INTERVAL_MS = 60 * 1000; // 60 seconds
 
 let watchdogTimer = null;
 let extensionId = null; // Set during initialization
+
+/**
+ * Check if Chrome browser process is currently active.
+ */
+function isBrowserRunning() {
+  try {
+    const output = execSync('tasklist /FI "IMAGENAME eq chrome.exe" /NH', { encoding: 'utf8', windowsHide: true });
+    return output.toLowerCase().includes('chrome.exe');
+  } catch {
+    return true; // Default to true if check fails
+  }
+}
 
 /**
  * Log a tamper attempt to the tamper log file.
@@ -106,10 +119,10 @@ function checkLayer1() {
   if (!cooldownManager.isExtensionAlive()) {
     const config = cooldownManager.loadConfig();
     const lastBeat = config.lastHeartbeat;
-    if (lastBeat > 0 && !heartbeatLossLogged) {
-      // Log once when heartbeat is first detected as lost
+    // Only log tamper if the browser is running but the extension isn't responding
+    if (lastBeat > 0 && !heartbeatLossLogged && isBrowserRunning()) {
       const minutesAgo = Math.floor((Date.now() - lastBeat) / 60000);
-      logTamper(1, `Extension heartbeat lost — last seen ${minutesAgo} minutes ago. Extension may have been force-removed.`);
+      logTamper(1, `Extension heartbeat lost while browser is running (last seen ${minutesAgo}m ago). Extension may have been disabled or removed.`);
       heartbeatLossLogged = true;
     }
   } else {

@@ -156,9 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 5000);
 
-  // Settings button — open settings page in new tab
+  // Settings button — open settings page
   document.getElementById('settingsBtn').addEventListener('click', () => {
-    chrome.tabs?.create({ url: 'settings.html' });
+    if (chrome?.runtime?.openOptionsPage) {
+      chrome.runtime.openOptionsPage();
+    } else {
+      window.open('settings.html');
+    }
   });
 
   // "Disable Protection" button — starts cooldown

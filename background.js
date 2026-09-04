@@ -357,18 +357,27 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
 
 /**
  * Increment all block counters (total, today, week).
- * Stats are tracked via messages from blocked.html — this is the only
- * reliable tracking path since onRuleMatchedDebug only fires with DevTools open.
+ * Stats are tracked via messages from blocked.html.
+ * Uses a sequential promise queue to eliminate race conditions from concurrent iframe blocks.
  */
+let trackBlockQueue = Promise.resolve();
+
 async function trackBlock() {
-  const { stats } = await chrome.storage.local.get(['stats']);
-  if (!stats) return;
+  trackBlockQueue = trackBlockQueue.then(async () => {
+    try {
+      const { stats } = await chrome.storage.local.get(['stats']);
+      if (!stats) return;
 
-  stats.totalBlocked = (stats.totalBlocked || 0) + 1;
-  stats.todayBlocked = (stats.todayBlocked || 0) + 1;
-  stats.weekBlocked = (stats.weekBlocked || 0) + 1;
+      stats.totalBlocked = (stats.totalBlocked || 0) + 1;
+      stats.todayBlocked = (stats.todayBlocked || 0) + 1;
+      stats.weekBlocked = (stats.weekBlocked || 0) + 1;
 
-  await chrome.storage.local.set({ stats });
+      await chrome.storage.local.set({ stats });
+    } catch (e) {
+      console.warn('[FocusGuard] Error updating block stats:', e);
+    }
+  });
+  return trackBlockQueue;
 }
 
 /**
@@ -586,7 +595,7 @@ async function applySafeSearchRules() {
 
   // SafeSearch rules use redirect to add SafeSearch parameters
   const safeSearchRules = [
-    // Google: force safe=active parameter (wildcard covers all Google TLDs)
+    // Google: force safe=active parameter (wildcard covers all Google country TLDs)
     {
       id: SAFESEARCH_RULE_START_ID,
       priority: 3,
@@ -605,9 +614,28 @@ async function applySafeSearchRules() {
         resourceTypes: ['main_frame'],
       },
     },
-    // Bing: force adlt=strict parameter
+    // Google Images directly
     {
       id: SAFESEARCH_RULE_START_ID + 1,
+      priority: 3,
+      action: {
+        type: 'redirect',
+        redirect: {
+          transform: {
+            queryTransform: {
+              addOrReplaceParams: [{ key: 'safe', value: 'active' }],
+            },
+          },
+        },
+      },
+      condition: {
+        urlFilter: '||images.google.*/search*',
+        resourceTypes: ['main_frame'],
+      },
+    },
+    // Bing: force adlt=strict parameter
+    {
+      id: SAFESEARCH_RULE_START_ID + 2,
       priority: 3,
       action: {
         type: 'redirect',
@@ -620,13 +648,13 @@ async function applySafeSearchRules() {
         },
       },
       condition: {
-        urlFilter: '||bing.com/search',
+        urlFilter: '||bing.com/search*',
         resourceTypes: ['main_frame'],
       },
     },
-    // DuckDuckGo: force kp=1 (strict) parameter — only on search queries
+    // DuckDuckGo: force kp=1 (strict) parameter
     {
-      id: SAFESEARCH_RULE_START_ID + 2,
+      id: SAFESEARCH_RULE_START_ID + 3,
       priority: 3,
       action: {
         type: 'redirect',
@@ -639,7 +667,64 @@ async function applySafeSearchRules() {
         },
       },
       condition: {
-        urlFilter: '||duckduckgo.com/?q',
+        urlFilter: '||duckduckgo.com/?q*',
+        resourceTypes: ['main_frame'],
+      },
+    },
+    // Yahoo: force vm=r (safe / strict mode)
+    {
+      id: SAFESEARCH_RULE_START_ID + 4,
+      priority: 3,
+      action: {
+        type: 'redirect',
+        redirect: {
+          transform: {
+            queryTransform: {
+              addOrReplaceParams: [{ key: 'vm', value: 'r' }],
+            },
+          },
+        },
+      },
+      condition: {
+        urlFilter: '||search.yahoo.com/search*',
+        resourceTypes: ['main_frame'],
+      },
+    },
+    // Ecosia: force safesearch=strict parameter
+    {
+      id: SAFESEARCH_RULE_START_ID + 5,
+      priority: 3,
+      action: {
+        type: 'redirect',
+        redirect: {
+          transform: {
+            queryTransform: {
+              addOrReplaceParams: [{ key: 'safesearch', value: 'strict' }],
+            },
+          },
+        },
+      },
+      condition: {
+        urlFilter: '||ecosia.org/search*',
+        resourceTypes: ['main_frame'],
+      },
+    },
+    // Yandex: force family=1 parameter
+    {
+      id: SAFESEARCH_RULE_START_ID + 6,
+      priority: 3,
+      action: {
+        type: 'redirect',
+        redirect: {
+          transform: {
+            queryTransform: {
+              addOrReplaceParams: [{ key: 'family', value: '1' }],
+            },
+          },
+        },
+      },
+      condition: {
+        urlFilter: '||yandex.*/search*',
         resourceTypes: ['main_frame'],
       },
     },

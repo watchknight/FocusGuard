@@ -2437,9 +2437,26 @@
                                                 "main_frame",
                                                 "sub_frame"
                                             ],
-                          "urlFilter":  "||loyalfans.com^"
+                          "urlFilter":  "||justfor.fans^"
                       },
         "id":  144,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=justfor.fans"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||loyalfans.com^"
+                      },
+        "id":  145,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2456,7 +2473,7 @@
                                             ],
                           "urlFilter":  "||fancentro.com^"
                       },
-        "id":  145,
+        "id":  146,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2471,9 +2488,26 @@
                                                 "main_frame",
                                                 "sub_frame"
                                             ],
+                          "urlFilter":  "||frisk.chat^"
+                      },
+        "id":  147,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=frisk.chat"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
                           "urlFilter":  "||alua.com^"
                       },
-        "id":  146,
+        "id":  148,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2490,7 +2524,7 @@
                                             ],
                           "urlFilter":  "||sextpanther.com^"
                       },
-        "id":  147,
+        "id":  149,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2507,7 +2541,7 @@
                                             ],
                           "urlFilter":  "||iwantclips.com^"
                       },
-        "id":  148,
+        "id":  150,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2524,7 +2558,7 @@
                                             ],
                           "urlFilter":  "||modelhub.com^"
                       },
-        "id":  149,
+        "id":  151,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2541,7 +2575,7 @@
                                             ],
                           "urlFilter":  "||pornhubpremium.com^"
                       },
-        "id":  150,
+        "id":  152,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2558,7 +2592,7 @@
                                             ],
                           "urlFilter":  "||bellesa.co^"
                       },
-        "id":  151,
+        "id":  153,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2575,7 +2609,7 @@
                                             ],
                           "urlFilter":  "||sssh.com^"
                       },
-        "id":  152,
+        "id":  154,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2592,7 +2626,7 @@
                                             ],
                           "urlFilter":  "||nhentai.net^"
                       },
-        "id":  153,
+        "id":  155,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2609,7 +2643,7 @@
                                             ],
                           "urlFilter":  "||hentaihaven.org^"
                       },
-        "id":  154,
+        "id":  156,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2626,7 +2660,7 @@
                                             ],
                           "urlFilter":  "||hanime.tv^"
                       },
-        "id":  155,
+        "id":  157,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2643,7 +2677,7 @@
                                             ],
                           "urlFilter":  "||rule34.xxx^"
                       },
-        "id":  156,
+        "id":  158,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2660,7 +2694,7 @@
                                             ],
                           "urlFilter":  "||fakku.net^"
                       },
-        "id":  157,
+        "id":  159,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2677,7 +2711,7 @@
                                             ],
                           "urlFilter":  "||gelbooru.com^"
                       },
-        "id":  158,
+        "id":  160,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2694,7 +2728,7 @@
                                             ],
                           "urlFilter":  "||sankakucomplex.com^"
                       },
-        "id":  159,
+        "id":  161,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2711,7 +2745,7 @@
                                             ],
                           "urlFilter":  "||rule34.paheal.net^"
                       },
-        "id":  160,
+        "id":  162,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2728,7 +2762,7 @@
                                             ],
                           "urlFilter":  "||e-hentai.org^"
                       },
-        "id":  161,
+        "id":  163,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2745,7 +2779,7 @@
                                             ],
                           "urlFilter":  "||exhentai.org^"
                       },
-        "id":  162,
+        "id":  164,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2762,7 +2796,7 @@
                                             ],
                           "urlFilter":  "||hitomi.la^"
                       },
-        "id":  163,
+        "id":  165,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2779,7 +2813,7 @@
                                             ],
                           "urlFilter":  "||hentai2read.com^"
                       },
-        "id":  164,
+        "id":  166,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2796,7 +2830,7 @@
                                             ],
                           "urlFilter":  "||hentaihere.com^"
                       },
-        "id":  165,
+        "id":  167,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2813,7 +2847,7 @@
                                             ],
                           "urlFilter":  "||hentaimama.io^"
                       },
-        "id":  166,
+        "id":  168,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2830,7 +2864,7 @@
                                             ],
                           "urlFilter":  "||hentaigasm.com^"
                       },
-        "id":  167,
+        "id":  169,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2847,7 +2881,7 @@
                                             ],
                           "urlFilter":  "||hentaistream.com^"
                       },
-        "id":  168,
+        "id":  170,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2864,7 +2898,7 @@
                                             ],
                           "urlFilter":  "||muchohentai.com^"
                       },
-        "id":  169,
+        "id":  171,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2881,7 +2915,7 @@
                                             ],
                           "urlFilter":  "||tsumino.com^"
                       },
-        "id":  170,
+        "id":  172,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2898,7 +2932,7 @@
                                             ],
                           "urlFilter":  "||pururin.to^"
                       },
-        "id":  171,
+        "id":  173,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2915,7 +2949,7 @@
                                             ],
                           "urlFilter":  "||simply-hentai.com^"
                       },
-        "id":  172,
+        "id":  174,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2932,7 +2966,7 @@
                                             ],
                           "urlFilter":  "||doujins.com^"
                       },
-        "id":  173,
+        "id":  175,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2949,7 +2983,7 @@
                                             ],
                           "urlFilter":  "||hentaifox.com^"
                       },
-        "id":  174,
+        "id":  176,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2966,7 +3000,7 @@
                                             ],
                           "urlFilter":  "||imhentai.xxx^"
                       },
-        "id":  175,
+        "id":  177,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -2983,7 +3017,7 @@
                                             ],
                           "urlFilter":  "||luscious.net^"
                       },
-        "id":  176,
+        "id":  178,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3000,7 +3034,7 @@
                                             ],
                           "urlFilter":  "||multporn.net^"
                       },
-        "id":  177,
+        "id":  179,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3017,7 +3051,7 @@
                                             ],
                           "urlFilter":  "||naughtycomics.net^"
                       },
-        "id":  178,
+        "id":  180,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3034,7 +3068,7 @@
                                             ],
                           "urlFilter":  "||naughtyatwork.org^"
                       },
-        "id":  179,
+        "id":  181,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3051,7 +3085,7 @@
                                             ],
                           "urlFilter":  "||shadbase.com^"
                       },
-        "id":  180,
+        "id":  182,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3068,7 +3102,7 @@
                                             ],
                           "urlFilter":  "||koushoku.org^"
                       },
-        "id":  181,
+        "id":  183,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3085,7 +3119,7 @@
                                             ],
                           "urlFilter":  "||mangahentai.me^"
                       },
-        "id":  182,
+        "id":  184,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3102,7 +3136,7 @@
                                             ],
                           "urlFilter":  "||hentainexus.com^"
                       },
-        "id":  183,
+        "id":  185,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3119,7 +3153,7 @@
                                             ],
                           "urlFilter":  "||hbrowse.com^"
                       },
-        "id":  184,
+        "id":  186,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3136,7 +3170,7 @@
                                             ],
                           "urlFilter":  "||myreadingmanga.info^"
                       },
-        "id":  185,
+        "id":  187,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3153,7 +3187,7 @@
                                             ],
                           "urlFilter":  "||cartoon-sex.com^"
                       },
-        "id":  186,
+        "id":  188,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3170,7 +3204,7 @@
                                             ],
                           "urlFilter":  "||cartoonpornvideos.com^"
                       },
-        "id":  187,
+        "id":  189,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3187,7 +3221,7 @@
                                             ],
                           "urlFilter":  "||rule34video.com^"
                       },
-        "id":  188,
+        "id":  190,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3204,7 +3238,7 @@
                                             ],
                           "urlFilter":  "||imagefap.com^"
                       },
-        "id":  189,
+        "id":  191,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3221,7 +3255,7 @@
                                             ],
                           "urlFilter":  "||nudevista.com^"
                       },
-        "id":  190,
+        "id":  192,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3238,7 +3272,7 @@
                                             ],
                           "urlFilter":  "||fapdu.com^"
                       },
-        "id":  191,
+        "id":  193,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3255,7 +3289,7 @@
                                             ],
                           "urlFilter":  "||pornpics.com^"
                       },
-        "id":  192,
+        "id":  194,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3272,7 +3306,7 @@
                                             ],
                           "urlFilter":  "||pornpics.de^"
                       },
-        "id":  193,
+        "id":  195,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3289,7 +3323,7 @@
                                             ],
                           "urlFilter":  "||babepedia.com^"
                       },
-        "id":  194,
+        "id":  196,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3306,7 +3340,7 @@
                                             ],
                           "urlFilter":  "||kindgirls.com^"
                       },
-        "id":  195,
+        "id":  197,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3323,7 +3357,7 @@
                                             ],
                           "urlFilter":  "||brdteengal.com^"
                       },
-        "id":  196,
+        "id":  198,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3340,7 +3374,7 @@
                                             ],
                           "urlFilter":  "||elitebabes.com^"
                       },
-        "id":  197,
+        "id":  199,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3357,7 +3391,7 @@
                                             ],
                           "urlFilter":  "||hegre-art.com^"
                       },
-        "id":  198,
+        "id":  200,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3374,7 +3408,7 @@
                                             ],
                           "urlFilter":  "||thelifeerotic.com^"
                       },
-        "id":  199,
+        "id":  201,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3391,7 +3425,7 @@
                                             ],
                           "urlFilter":  "||femjoyhunter.com^"
                       },
-        "id":  200,
+        "id":  202,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3408,7 +3442,7 @@
                                             ],
                           "urlFilter":  "||metarthunter.com^"
                       },
-        "id":  201,
+        "id":  203,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3425,7 +3459,7 @@
                                             ],
                           "urlFilter":  "||morazzia.com^"
                       },
-        "id":  202,
+        "id":  204,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3442,7 +3476,7 @@
                                             ],
                           "urlFilter":  "||errotica-archives.com^"
                       },
-        "id":  203,
+        "id":  205,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3459,7 +3493,7 @@
                                             ],
                           "urlFilter":  "||xfantazy.com^"
                       },
-        "id":  204,
+        "id":  206,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3476,7 +3510,7 @@
                                             ],
                           "urlFilter":  "||hegreart.com^"
                       },
-        "id":  205,
+        "id":  207,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3493,7 +3527,7 @@
                                             ],
                           "urlFilter":  "||eroticbeauties.net^"
                       },
-        "id":  206,
+        "id":  208,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3510,7 +3544,7 @@
                                             ],
                           "urlFilter":  "||foxhq.com^"
                       },
-        "id":  207,
+        "id":  209,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3527,7 +3561,7 @@
                                             ],
                           "urlFilter":  "||bustybloom.com^"
                       },
-        "id":  208,
+        "id":  210,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3544,7 +3578,7 @@
                                             ],
                           "urlFilter":  "||girlsofdesire.org^"
                       },
-        "id":  209,
+        "id":  211,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3561,7 +3595,7 @@
                                             ],
                           "urlFilter":  "||x-angels.com^"
                       },
-        "id":  210,
+        "id":  212,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3578,7 +3612,7 @@
                                             ],
                           "urlFilter":  "||alsscan.com^"
                       },
-        "id":  211,
+        "id":  213,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3595,7 +3629,7 @@
                                             ],
                           "urlFilter":  "||inthecrack.com^"
                       },
-        "id":  212,
+        "id":  214,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3612,7 +3646,7 @@
                                             ],
                           "urlFilter":  "||mcnudes.com^"
                       },
-        "id":  213,
+        "id":  215,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3629,7 +3663,7 @@
                                             ],
                           "urlFilter":  "||domai.com^"
                       },
-        "id":  214,
+        "id":  216,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3646,7 +3680,7 @@
                                             ],
                           "urlFilter":  "||eroutique.com^"
                       },
-        "id":  215,
+        "id":  217,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3663,7 +3697,7 @@
                                             ],
                           "urlFilter":  "||zemani.com^"
                       },
-        "id":  216,
+        "id":  218,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3680,7 +3714,7 @@
                                             ],
                           "urlFilter":  "||stunning18.com^"
                       },
-        "id":  217,
+        "id":  219,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3697,7 +3731,7 @@
                                             ],
                           "urlFilter":  "||rylskyart.com^"
                       },
-        "id":  218,
+        "id":  220,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3714,7 +3748,7 @@
                                             ],
                           "urlFilter":  "||eroticbeauty.com^"
                       },
-        "id":  219,
+        "id":  221,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3731,7 +3765,7 @@
                                             ],
                           "urlFilter":  "||planetsuzy.org^"
                       },
-        "id":  220,
+        "id":  222,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3748,7 +3782,7 @@
                                             ],
                           "urlFilter":  "||phun.org^"
                       },
-        "id":  221,
+        "id":  223,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3765,7 +3799,7 @@
                                             ],
                           "urlFilter":  "||forumophilia.com^"
                       },
-        "id":  222,
+        "id":  224,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3782,7 +3816,7 @@
                                             ],
                           "urlFilter":  "||freeusenet.nl^"
                       },
-        "id":  223,
+        "id":  225,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3799,7 +3833,7 @@
                                             ],
                           "urlFilter":  "||adultdeepfakes.com^"
                       },
-        "id":  224,
+        "id":  226,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3816,7 +3850,7 @@
                                             ],
                           "urlFilter":  "||mrdeepfakes.com^"
                       },
-        "id":  225,
+        "id":  227,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3833,7 +3867,7 @@
                                             ],
                           "urlFilter":  "||celebjihad.com^"
                       },
-        "id":  226,
+        "id":  228,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3850,7 +3884,7 @@
                                             ],
                           "urlFilter":  "||celeb.gate.cc^"
                       },
-        "id":  227,
+        "id":  229,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3867,7 +3901,7 @@
                                             ],
                           "urlFilter":  "||thefappeningblog.com^"
                       },
-        "id":  228,
+        "id":  230,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3884,7 +3918,7 @@
                                             ],
                           "urlFilter":  "||nudecelebforum.com^"
                       },
-        "id":  229,
+        "id":  231,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3901,7 +3935,7 @@
                                             ],
                           "urlFilter":  "||famousboard.com^"
                       },
-        "id":  230,
+        "id":  232,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3918,7 +3952,7 @@
                                             ],
                           "urlFilter":  "||aznude.com^"
                       },
-        "id":  231,
+        "id":  233,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3935,7 +3969,7 @@
                                             ],
                           "urlFilter":  "||nudography.com^"
                       },
-        "id":  232,
+        "id":  234,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3952,7 +3986,7 @@
                                             ],
                           "urlFilter":  "||ancensored.com^"
                       },
-        "id":  233,
+        "id":  235,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3969,7 +4003,7 @@
                                             ],
                           "urlFilter":  "||boobpedia.com^"
                       },
-        "id":  234,
+        "id":  236,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -3986,7 +4020,7 @@
                                             ],
                           "urlFilter":  "||literotica.com^"
                       },
-        "id":  235,
+        "id":  237,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4003,7 +4037,7 @@
                                             ],
                           "urlFilter":  "||sexstories.com^"
                       },
-        "id":  236,
+        "id":  238,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4020,7 +4054,7 @@
                                             ],
                           "urlFilter":  "||storiesonline.net^"
                       },
-        "id":  237,
+        "id":  239,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4037,7 +4071,7 @@
                                             ],
                           "urlFilter":  "||asstr.org^"
                       },
-        "id":  238,
+        "id":  240,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4054,7 +4088,7 @@
                                             ],
                           "urlFilter":  "||bdsmlibrary.com^"
                       },
-        "id":  239,
+        "id":  241,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4071,7 +4105,7 @@
                                             ],
                           "urlFilter":  "||nifty.org^"
                       },
-        "id":  240,
+        "id":  242,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4088,7 +4122,7 @@
                                             ],
                           "urlFilter":  "||mcstories.com^"
                       },
-        "id":  241,
+        "id":  243,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4105,7 +4139,7 @@
                                             ],
                           "urlFilter":  "||chyoa.com^"
                       },
-        "id":  242,
+        "id":  244,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4122,7 +4156,7 @@
                                             ],
                           "urlFilter":  "||adultfriendfinder.com^"
                       },
-        "id":  243,
+        "id":  245,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4139,7 +4173,7 @@
                                             ],
                           "urlFilter":  "||ashleymadison.com^"
                       },
-        "id":  244,
+        "id":  246,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4156,7 +4190,7 @@
                                             ],
                           "urlFilter":  "||benaughty.com^"
                       },
-        "id":  245,
+        "id":  247,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4173,7 +4207,7 @@
                                             ],
                           "urlFilter":  "||fling.com^"
                       },
-        "id":  246,
+        "id":  248,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4190,7 +4224,7 @@
                                             ],
                           "urlFilter":  "||alt.com^"
                       },
-        "id":  247,
+        "id":  249,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4207,7 +4241,7 @@
                                             ],
                           "urlFilter":  "||fetlife.com^"
                       },
-        "id":  248,
+        "id":  250,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4224,7 +4258,7 @@
                                             ],
                           "urlFilter":  "||collarspace.com^"
                       },
-        "id":  249,
+        "id":  251,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4241,7 +4275,7 @@
                                             ],
                           "urlFilter":  "||swinglifestyle.com^"
                       },
-        "id":  250,
+        "id":  252,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4258,7 +4292,7 @@
                                             ],
                           "urlFilter":  "||kasidie.com^"
                       },
-        "id":  251,
+        "id":  253,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4275,7 +4309,7 @@
                                             ],
                           "urlFilter":  "||sdc.com^"
                       },
-        "id":  252,
+        "id":  254,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4292,7 +4326,7 @@
                                             ],
                           "urlFilter":  "||feeld.co^"
                       },
-        "id":  253,
+        "id":  255,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4309,7 +4343,7 @@
                                             ],
                           "urlFilter":  "||tryst.link^"
                       },
-        "id":  254,
+        "id":  256,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4326,7 +4360,7 @@
                                             ],
                           "urlFilter":  "||eros.com^"
                       },
-        "id":  255,
+        "id":  257,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4343,7 +4377,7 @@
                                             ],
                           "urlFilter":  "||erosguide.com^"
                       },
-        "id":  256,
+        "id":  258,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4360,7 +4394,7 @@
                                             ],
                           "urlFilter":  "||rubmaps.ch^"
                       },
-        "id":  257,
+        "id":  259,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4377,7 +4411,7 @@
                                             ],
                           "urlFilter":  "||listcrawler.com^"
                       },
-        "id":  258,
+        "id":  260,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4394,7 +4428,7 @@
                                             ],
                           "urlFilter":  "||escortdirectory.com^"
                       },
-        "id":  259,
+        "id":  261,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4411,7 +4445,7 @@
                                             ],
                           "urlFilter":  "||skipthegames.com^"
                       },
-        "id":  260,
+        "id":  262,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4428,7 +4462,7 @@
                                             ],
                           "urlFilter":  "||bedpage.com^"
                       },
-        "id":  261,
+        "id":  263,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4445,7 +4479,7 @@
                                             ],
                           "urlFilter":  "||megapersonals.com^"
                       },
-        "id":  262,
+        "id":  264,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4462,7 +4496,7 @@
                                             ],
                           "urlFilter":  "||privatedelights.ch^"
                       },
-        "id":  263,
+        "id":  265,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4479,7 +4513,7 @@
                                             ],
                           "urlFilter":  "||slixa.com^"
                       },
-        "id":  264,
+        "id":  266,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4496,7 +4530,7 @@
                                             ],
                           "urlFilter":  "||eroticmonkey.ch^"
                       },
-        "id":  265,
+        "id":  267,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4513,7 +4547,7 @@
                                             ],
                           "urlFilter":  "||leolist.cc^"
                       },
-        "id":  266,
+        "id":  268,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4528,9 +4562,145 @@
                                                 "main_frame",
                                                 "sub_frame"
                                             ],
+                          "urlFilter":  "||reddit.com^"
+                      },
+        "id":  269,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=reddit.com"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||redd.it^"
+                      },
+        "id":  270,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=redd.it"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||redditmedia.com^"
+                      },
+        "id":  271,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=redditmedia.com"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||redditstatic.com^"
+                      },
+        "id":  272,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=redditstatic.com"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||twitter.com^"
+                      },
+        "id":  273,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=twitter.com"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||x.com^"
+                      },
+        "id":  274,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=x.com"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||t.co^"
+                      },
+        "id":  275,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=t.co"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
+                          "urlFilter":  "||twimg.com^"
+                      },
+        "id":  276,
+        "action":  {
+                       "type":  "redirect",
+                       "redirect":  {
+                                        "extensionPath":  "/blocked.html?domain=twimg.com"
+                                    }
+                   }
+    },
+    {
+        "priority":  1,
+        "condition":  {
+                          "resourceTypes":  [
+                                                "main_frame",
+                                                "sub_frame"
+                                            ],
                           "urlFilter":  "||scrolller.com^"
                       },
-        "id":  267,
+        "id":  277,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4547,7 +4717,7 @@
                                             ],
                           "urlFilter":  "||lewdweb.net^"
                       },
-        "id":  268,
+        "id":  278,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4564,7 +4734,7 @@
                                             ],
                           "urlFilter":  "||coomer.su^"
                       },
-        "id":  269,
+        "id":  279,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4581,7 +4751,7 @@
                                             ],
                           "urlFilter":  "||coomer.party^"
                       },
-        "id":  270,
+        "id":  280,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4598,7 +4768,7 @@
                                             ],
                           "urlFilter":  "||kemono.su^"
                       },
-        "id":  271,
+        "id":  281,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4615,7 +4785,7 @@
                                             ],
                           "urlFilter":  "||kemono.party^"
                       },
-        "id":  272,
+        "id":  282,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4632,7 +4802,7 @@
                                             ],
                           "urlFilter":  "||fapello.com^"
                       },
-        "id":  273,
+        "id":  283,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4649,7 +4819,7 @@
                                             ],
                           "urlFilter":  "||thothub.to^"
                       },
-        "id":  274,
+        "id":  284,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4666,7 +4836,7 @@
                                             ],
                           "urlFilter":  "||simpcity.su^"
                       },
-        "id":  275,
+        "id":  285,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4683,7 +4853,7 @@
                                             ],
                           "urlFilter":  "||leakedbb.com^"
                       },
-        "id":  276,
+        "id":  286,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4700,7 +4870,7 @@
                                             ],
                           "urlFilter":  "||socialmediagirls.com^"
                       },
-        "id":  277,
+        "id":  287,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4717,7 +4887,7 @@
                                             ],
                           "urlFilter":  "||nudostar.com^"
                       },
-        "id":  278,
+        "id":  288,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4734,7 +4904,7 @@
                                             ],
                           "urlFilter":  "||hotleak.vip^"
                       },
-        "id":  279,
+        "id":  289,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4751,7 +4921,7 @@
                                             ],
                           "urlFilter":  "||thotsbay.com^"
                       },
-        "id":  280,
+        "id":  290,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4768,7 +4938,7 @@
                                             ],
                           "urlFilter":  "||alohatube.com^"
                       },
-        "id":  281,
+        "id":  291,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4785,7 +4955,7 @@
                                             ],
                           "urlFilter":  "||lobstertube.com^"
                       },
-        "id":  282,
+        "id":  292,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4802,7 +4972,7 @@
                                             ],
                           "urlFilter":  "||pornmd.com^"
                       },
-        "id":  283,
+        "id":  293,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4819,7 +4989,7 @@
                                             ],
                           "urlFilter":  "||pornwhite.com^"
                       },
-        "id":  284,
+        "id":  294,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4836,7 +5006,7 @@
                                             ],
                           "urlFilter":  "||fullporner.com^"
                       },
-        "id":  285,
+        "id":  295,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4853,7 +5023,7 @@
                                             ],
                           "urlFilter":  "||collectionofbestporn.com^"
                       },
-        "id":  286,
+        "id":  296,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4870,7 +5040,7 @@
                                             ],
                           "urlFilter":  "||booloo.com^"
                       },
-        "id":  287,
+        "id":  297,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4887,7 +5057,7 @@
                                             ],
                           "urlFilter":  "||tubev.sex^"
                       },
-        "id":  288,
+        "id":  298,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4904,7 +5074,7 @@
                                             ],
                           "urlFilter":  "||tiava.com^"
                       },
-        "id":  289,
+        "id":  299,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4921,7 +5091,7 @@
                                             ],
                           "urlFilter":  "||xxxdan.com^"
                       },
-        "id":  290,
+        "id":  300,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4938,7 +5108,7 @@
                                             ],
                           "urlFilter":  "||definebabe.com^"
                       },
-        "id":  291,
+        "id":  301,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4955,7 +5125,7 @@
                                             ],
                           "urlFilter":  "||babesource.com^"
                       },
-        "id":  292,
+        "id":  302,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4972,7 +5142,7 @@
                                             ],
                           "urlFilter":  "||smutr.com^"
                       },
-        "id":  293,
+        "id":  303,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -4989,7 +5159,7 @@
                                             ],
                           "urlFilter":  "||freeomovie.to^"
                       },
-        "id":  294,
+        "id":  304,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5006,7 +5176,7 @@
                                             ],
                           "urlFilter":  "||erothots.com^"
                       },
-        "id":  295,
+        "id":  305,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5023,7 +5193,7 @@
                                             ],
                           "urlFilter":  "||thepornmap.com^"
                       },
-        "id":  296,
+        "id":  306,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5040,7 +5210,7 @@
                                             ],
                           "urlFilter":  "||xfreehd.com^"
                       },
-        "id":  297,
+        "id":  307,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5057,7 +5227,7 @@
                                             ],
                           "urlFilter":  "||homemoviestube.com^"
                       },
-        "id":  298,
+        "id":  308,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5074,7 +5244,7 @@
                                             ],
                           "urlFilter":  "||amateurporn.com^"
                       },
-        "id":  299,
+        "id":  309,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5091,7 +5261,7 @@
                                             ],
                           "urlFilter":  "||reallifecam.com^"
                       },
-        "id":  300,
+        "id":  310,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5108,7 +5278,7 @@
                                             ],
                           "urlFilter":  "||voyeurhit.com^"
                       },
-        "id":  301,
+        "id":  311,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5125,7 +5295,7 @@
                                             ],
                           "urlFilter":  "||voyeurhouse.tv^"
                       },
-        "id":  302,
+        "id":  312,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5142,7 +5312,7 @@
                                             ],
                           "urlFilter":  "||terk.nl^"
                       },
-        "id":  303,
+        "id":  313,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5159,7 +5329,7 @@
                                             ],
                           "urlFilter":  "||findtubes.com^"
                       },
-        "id":  304,
+        "id":  314,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5176,7 +5346,7 @@
                                             ],
                           "urlFilter":  "||motherless.com^"
                       },
-        "id":  305,
+        "id":  315,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5193,7 +5363,7 @@
                                             ],
                           "urlFilter":  "||heavy-r.com^"
                       },
-        "id":  306,
+        "id":  316,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5210,7 +5380,7 @@
                                             ],
                           "urlFilter":  "||efukt.com^"
                       },
-        "id":  307,
+        "id":  317,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5227,7 +5397,7 @@
                                             ],
                           "urlFilter":  "||theync.com^"
                       },
-        "id":  308,
+        "id":  318,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5244,7 +5414,7 @@
                                             ],
                           "urlFilter":  "||javhd.com^"
                       },
-        "id":  309,
+        "id":  319,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5261,7 +5431,7 @@
                                             ],
                           "urlFilter":  "||javlibrary.com^"
                       },
-        "id":  310,
+        "id":  320,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5278,7 +5448,7 @@
                                             ],
                           "urlFilter":  "||r18.com^"
                       },
-        "id":  311,
+        "id":  321,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5295,7 +5465,7 @@
                                             ],
                           "urlFilter":  "||caribbeancom.com^"
                       },
-        "id":  312,
+        "id":  322,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5312,7 +5482,7 @@
                                             ],
                           "urlFilter":  "||1pondo.tv^"
                       },
-        "id":  313,
+        "id":  323,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5329,7 +5499,7 @@
                                             ],
                           "urlFilter":  "||tokyohot.com^"
                       },
-        "id":  314,
+        "id":  324,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5346,7 +5516,7 @@
                                             ],
                           "urlFilter":  "||heyzo.com^"
                       },
-        "id":  315,
+        "id":  325,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5363,7 +5533,7 @@
                                             ],
                           "urlFilter":  "||dmm.co.jp^"
                       },
-        "id":  316,
+        "id":  326,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5380,7 +5550,7 @@
                                             ],
                           "urlFilter":  "||javmost.com^"
                       },
-        "id":  317,
+        "id":  327,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5397,7 +5567,7 @@
                                             ],
                           "urlFilter":  "||javfree.sh^"
                       },
-        "id":  318,
+        "id":  328,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5414,7 +5584,7 @@
                                             ],
                           "urlFilter":  "||missav.com^"
                       },
-        "id":  319,
+        "id":  329,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5431,7 +5601,7 @@
                                             ],
                           "urlFilter":  "||thisav.com^"
                       },
-        "id":  320,
+        "id":  330,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5448,7 +5618,7 @@
                                             ],
                           "urlFilter":  "||jable.tv^"
                       },
-        "id":  321,
+        "id":  331,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5465,7 +5635,7 @@
                                             ],
                           "urlFilter":  "||avgle.com^"
                       },
-        "id":  322,
+        "id":  332,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5482,7 +5652,7 @@
                                             ],
                           "urlFilter":  "||supjav.com^"
                       },
-        "id":  323,
+        "id":  333,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5499,7 +5669,7 @@
                                             ],
                           "urlFilter":  "||javbangers.com^"
                       },
-        "id":  324,
+        "id":  334,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5516,7 +5686,7 @@
                                             ],
                           "urlFilter":  "||javseen.tv^"
                       },
-        "id":  325,
+        "id":  335,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5533,7 +5703,7 @@
                                             ],
                           "urlFilter":  "||javgg.net^"
                       },
-        "id":  326,
+        "id":  336,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5550,7 +5720,7 @@
                                             ],
                           "urlFilter":  "||onejav.com^"
                       },
-        "id":  327,
+        "id":  337,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5567,7 +5737,7 @@
                                             ],
                           "urlFilter":  "||javdoe.sh^"
                       },
-        "id":  328,
+        "id":  338,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5584,7 +5754,7 @@
                                             ],
                           "urlFilter":  "||kissjav.com^"
                       },
-        "id":  329,
+        "id":  339,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5601,7 +5771,7 @@
                                             ],
                           "urlFilter":  "||njav.tv^"
                       },
-        "id":  330,
+        "id":  340,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5618,7 +5788,7 @@
                                             ],
                           "urlFilter":  "||javhub.net^"
                       },
-        "id":  331,
+        "id":  341,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5635,7 +5805,7 @@
                                             ],
                           "urlFilter":  "||mydirtyhobby.com^"
                       },
-        "id":  332,
+        "id":  342,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5652,7 +5822,7 @@
                                             ],
                           "urlFilter":  "||mydirtyhobby.de^"
                       },
-        "id":  333,
+        "id":  343,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5669,7 +5839,7 @@
                                             ],
                           "urlFilter":  "||fundorado.de^"
                       },
-        "id":  334,
+        "id":  344,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5686,7 +5856,7 @@
                                             ],
                           "urlFilter":  "||amateurcommunity.com^"
                       },
-        "id":  335,
+        "id":  345,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5703,7 +5873,7 @@
                                             ],
                           "urlFilter":  "||big7.com^"
                       },
-        "id":  336,
+        "id":  346,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5720,7 +5890,7 @@
                                             ],
                           "urlFilter":  "||visit-x.net^"
                       },
-        "id":  337,
+        "id":  347,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5737,7 +5907,7 @@
                                             ],
                           "urlFilter":  "||xhamsterlive.com^"
                       },
-        "id":  338,
+        "id":  348,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5754,7 +5924,7 @@
                                             ],
                           "urlFilter":  "||eroprofile.com^"
                       },
-        "id":  339,
+        "id":  349,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5771,7 +5941,7 @@
                                             ],
                           "urlFilter":  "||sexmex.xxx^"
                       },
-        "id":  340,
+        "id":  350,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5788,7 +5958,7 @@
                                             ],
                           "urlFilter":  "||culioneros.com^"
                       },
-        "id":  341,
+        "id":  351,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5805,7 +5975,7 @@
                                             ],
                           "urlFilter":  "||gaytube.com^"
                       },
-        "id":  342,
+        "id":  352,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5822,7 +5992,7 @@
                                             ],
                           "urlFilter":  "||boyfriendtv.com^"
                       },
-        "id":  343,
+        "id":  353,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5839,7 +6009,7 @@
                                             ],
                           "urlFilter":  "||gaymaletube.com^"
                       },
-        "id":  344,
+        "id":  354,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5856,7 +6026,7 @@
                                             ],
                           "urlFilter":  "||adam4adam.com^"
                       },
-        "id":  345,
+        "id":  355,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5873,7 +6043,7 @@
                                             ],
                           "urlFilter":  "||manhunt.net^"
                       },
-        "id":  346,
+        "id":  356,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5890,7 +6060,7 @@
                                             ],
                           "urlFilter":  "||rentmen.com^"
                       },
-        "id":  347,
+        "id":  357,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5907,7 +6077,7 @@
                                             ],
                           "urlFilter":  "||squirt.org^"
                       },
-        "id":  348,
+        "id":  358,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5924,7 +6094,7 @@
                                             ],
                           "urlFilter":  "||xtube.com^"
                       },
-        "id":  349,
+        "id":  359,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5941,7 +6111,7 @@
                                             ],
                           "urlFilter":  "||gayfuror.com^"
                       },
-        "id":  350,
+        "id":  360,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5958,7 +6128,7 @@
                                             ],
                           "urlFilter":  "||thisvid.com^"
                       },
-        "id":  351,
+        "id":  361,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5975,7 +6145,7 @@
                                             ],
                           "urlFilter":  "||ballbusting.org^"
                       },
-        "id":  352,
+        "id":  362,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -5992,7 +6162,7 @@
                                             ],
                           "urlFilter":  "||bdsmstreak.com^"
                       },
-        "id":  353,
+        "id":  363,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6009,7 +6179,7 @@
                                             ],
                           "urlFilter":  "||femdomempire.com^"
                       },
-        "id":  354,
+        "id":  364,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6026,7 +6196,7 @@
                                             ],
                           "urlFilter":  "||meantube.com^"
                       },
-        "id":  355,
+        "id":  365,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6043,7 +6213,7 @@
                                             ],
                           "urlFilter":  "||footfetishbb.com^"
                       },
-        "id":  356,
+        "id":  366,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6060,7 +6230,7 @@
                                             ],
                           "urlFilter":  "||wikifeet.com^"
                       },
-        "id":  357,
+        "id":  367,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6077,7 +6247,7 @@
                                             ],
                           "urlFilter":  "||wikifeetx.com^"
                       },
-        "id":  358,
+        "id":  368,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6094,7 +6264,7 @@
                                             ],
                           "urlFilter":  "||fetishpapa.com^"
                       },
-        "id":  359,
+        "id":  369,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6111,7 +6281,7 @@
                                             ],
                           "urlFilter":  "||hentai-foundry.com^"
                       },
-        "id":  360,
+        "id":  370,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6128,7 +6298,7 @@
                                             ],
                           "urlFilter":  "||deviantclip.com^"
                       },
-        "id":  361,
+        "id":  371,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6145,7 +6315,7 @@
                                             ],
                           "urlFilter":  "||zbporn.com^"
                       },
-        "id":  362,
+        "id":  372,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6162,7 +6332,7 @@
                                             ],
                           "urlFilter":  "||ok.xxx^"
                       },
-        "id":  363,
+        "id":  373,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6179,7 +6349,7 @@
                                             ],
                           "urlFilter":  "||tubesafari.com^"
                       },
-        "id":  364,
+        "id":  374,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6196,7 +6366,7 @@
                                             ],
                           "urlFilter":  "||tubxporn.xxx^"
                       },
-        "id":  365,
+        "id":  375,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6213,7 +6383,7 @@
                                             ],
                           "urlFilter":  "||perfectgirls.net^"
                       },
-        "id":  366,
+        "id":  376,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6230,7 +6400,7 @@
                                             ],
                           "urlFilter":  "||perfectgirls.xxx^"
                       },
-        "id":  367,
+        "id":  377,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6247,7 +6417,7 @@
                                             ],
                           "urlFilter":  "||pichunter.com^"
                       },
-        "id":  368,
+        "id":  378,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6264,7 +6434,7 @@
                                             ],
                           "urlFilter":  "||freeporn.com^"
                       },
-        "id":  369,
+        "id":  379,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6281,7 +6451,7 @@
                                             ],
                           "urlFilter":  "||freeporn8.com^"
                       },
-        "id":  370,
+        "id":  380,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6298,7 +6468,7 @@
                                             ],
                           "urlFilter":  "||freesexvideos.com^"
                       },
-        "id":  371,
+        "id":  381,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6315,7 +6485,7 @@
                                             ],
                           "urlFilter":  "||sexvid.xxx^"
                       },
-        "id":  372,
+        "id":  382,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6332,7 +6502,7 @@
                                             ],
                           "urlFilter":  "||xbabe.com^"
                       },
-        "id":  373,
+        "id":  383,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6349,7 +6519,7 @@
                                             ],
                           "urlFilter":  "||youx.xxx^"
                       },
-        "id":  374,
+        "id":  384,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6366,7 +6536,7 @@
                                             ],
                           "urlFilter":  "||proporn.com^"
                       },
-        "id":  375,
+        "id":  385,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6383,7 +6553,7 @@
                                             ],
                           "urlFilter":  "||pornlib.com^"
                       },
-        "id":  376,
+        "id":  386,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6400,7 +6570,7 @@
                                             ],
                           "urlFilter":  "||pornbimbo.com^"
                       },
-        "id":  377,
+        "id":  387,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6417,7 +6587,7 @@
                                             ],
                           "urlFilter":  "||maturetube.com^"
                       },
-        "id":  378,
+        "id":  388,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6434,7 +6604,7 @@
                                             ],
                           "urlFilter":  "||maturetubehere.com^"
                       },
-        "id":  379,
+        "id":  389,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6451,7 +6621,7 @@
                                             ],
                           "urlFilter":  "||milfmovs.com^"
                       },
-        "id":  380,
+        "id":  390,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6468,7 +6638,7 @@
                                             ],
                           "urlFilter":  "||milfporn.com^"
                       },
-        "id":  381,
+        "id":  391,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6485,7 +6655,7 @@
                                             ],
                           "urlFilter":  "||milfsex.com^"
                       },
-        "id":  382,
+        "id":  392,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6502,7 +6672,7 @@
                                             ],
                           "urlFilter":  "||milf.com^"
                       },
-        "id":  383,
+        "id":  393,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6519,7 +6689,7 @@
                                             ],
                           "urlFilter":  "||tits.com^"
                       },
-        "id":  384,
+        "id":  394,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6536,7 +6706,7 @@
                                             ],
                           "urlFilter":  "||boobs.com^"
                       },
-        "id":  385,
+        "id":  395,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6553,7 +6723,7 @@
                                             ],
                           "urlFilter":  "||ass.com^"
                       },
-        "id":  386,
+        "id":  396,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6570,7 +6740,7 @@
                                             ],
                           "urlFilter":  "||pussy.com^"
                       },
-        "id":  387,
+        "id":  397,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6587,7 +6757,7 @@
                                             ],
                           "urlFilter":  "||hotmovs.com^"
                       },
-        "id":  388,
+        "id":  398,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6604,7 +6774,7 @@
                                             ],
                           "urlFilter":  "||hotscope.tv^"
                       },
-        "id":  389,
+        "id":  399,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6621,7 +6791,7 @@
                                             ],
                           "urlFilter":  "||analdin.com^"
                       },
-        "id":  390,
+        "id":  400,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6638,7 +6808,7 @@
                                             ],
                           "urlFilter":  "||analmom.com^"
                       },
-        "id":  391,
+        "id":  401,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6655,7 +6825,7 @@
                                             ],
                           "urlFilter":  "||analvids.com^"
                       },
-        "id":  392,
+        "id":  402,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6672,7 +6842,7 @@
                                             ],
                           "urlFilter":  "||analacrobats.com^"
                       },
-        "id":  393,
+        "id":  403,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6689,7 +6859,7 @@
                                             ],
                           "urlFilter":  "||bangbrosnetwork.com^"
                       },
-        "id":  394,
+        "id":  404,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6706,7 +6876,7 @@
                                             ],
                           "urlFilter":  "||bigtitsroundasses.com^"
                       },
-        "id":  395,
+        "id":  405,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6723,7 +6893,7 @@
                                             ],
                           "urlFilter":  "||cumlouder.com^"
                       },
-        "id":  396,
+        "id":  406,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6740,7 +6910,7 @@
                                             ],
                           "urlFilter":  "||daftsex.com^"
                       },
-        "id":  397,
+        "id":  407,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6757,7 +6927,7 @@
                                             ],
                           "urlFilter":  "||damplips.com^"
                       },
-        "id":  398,
+        "id":  408,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6774,7 +6944,7 @@
                                             ],
                           "urlFilter":  "||dansmovies.com^"
                       },
-        "id":  399,
+        "id":  409,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6791,7 +6961,7 @@
                                             ],
                           "urlFilter":  "||desiporn.tube^"
                       },
-        "id":  400,
+        "id":  410,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6808,7 +6978,7 @@
                                             ],
                           "urlFilter":  "||desixxxtube.com^"
                       },
-        "id":  401,
+        "id":  411,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6825,7 +6995,7 @@
                                             ],
                           "urlFilter":  "||dirtyship.com^"
                       },
-        "id":  402,
+        "id":  412,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6842,7 +7012,7 @@
                                             ],
                           "urlFilter":  "||extremetube.com^"
                       },
-        "id":  403,
+        "id":  413,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6859,7 +7029,7 @@
                                             ],
                           "urlFilter":  "||f95zone.to^"
                       },
-        "id":  404,
+        "id":  414,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6876,7 +7046,7 @@
                                             ],
                           "urlFilter":  "||faapy.com^"
                       },
-        "id":  405,
+        "id":  415,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6893,7 +7063,7 @@
                                             ],
                           "urlFilter":  "||fap18.net^"
                       },
-        "id":  406,
+        "id":  416,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6910,7 +7080,7 @@
                                             ],
                           "urlFilter":  "||fapster.xxx^"
                       },
-        "id":  407,
+        "id":  417,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6927,7 +7097,7 @@
                                             ],
                           "urlFilter":  "||freehdinterracial.com^"
                       },
-        "id":  408,
+        "id":  418,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6944,7 +7114,7 @@
                                             ],
                           "urlFilter":  "||freepornvideo.sex^"
                       },
-        "id":  409,
+        "id":  419,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6961,7 +7131,7 @@
                                             ],
                           "urlFilter":  "||fresno-ede.org^"
                       },
-        "id":  410,
+        "id":  420,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6978,7 +7148,7 @@
                                             ],
                           "urlFilter":  "||ghettotube.com^"
                       },
-        "id":  411,
+        "id":  421,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -6995,7 +7165,7 @@
                                             ],
                           "urlFilter":  "||girlsdoporn.com^"
                       },
-        "id":  412,
+        "id":  422,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7012,7 +7182,7 @@
                                             ],
                           "urlFilter":  "||girlsgonewild.com^"
                       },
-        "id":  413,
+        "id":  423,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7029,7 +7199,7 @@
                                             ],
                           "urlFilter":  "||gonzo4free.com^"
                       },
-        "id":  414,
+        "id":  424,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7046,7 +7216,7 @@
                                             ],
                           "urlFilter":  "||good-pornography.com^"
                       },
-        "id":  415,
+        "id":  425,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7063,7 +7233,7 @@
                                             ],
                           "urlFilter":  "||hdpornvideo.xxx^"
                       },
-        "id":  416,
+        "id":  426,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7080,7 +7250,7 @@
                                             ],
                           "urlFilter":  "||hellporno.com^"
                       },
-        "id":  417,
+        "id":  427,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7097,7 +7267,7 @@
                                             ],
                           "urlFilter":  "||hentaicloud.com^"
                       },
-        "id":  418,
+        "id":  428,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7114,7 +7284,7 @@
                                             ],
                           "urlFilter":  "||hentaicovid.com^"
                       },
-        "id":  419,
+        "id":  429,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7131,7 +7301,7 @@
                                             ],
                           "urlFilter":  "||hentaidude.com^"
                       },
-        "id":  420,
+        "id":  430,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7148,7 +7318,7 @@
                                             ],
                           "urlFilter":  "||hentaipros.com^"
                       },
-        "id":  421,
+        "id":  431,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7165,7 +7335,7 @@
                                             ],
                           "urlFilter":  "||hentaiworld.tv^"
                       },
-        "id":  422,
+        "id":  432,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7182,7 +7352,7 @@
                                             ],
                           "urlFilter":  "||hoes.tube^"
                       },
-        "id":  423,
+        "id":  433,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7199,7 +7369,7 @@
                                             ],
                           "urlFilter":  "||hotguysfuck.com^"
                       },
-        "id":  424,
+        "id":  434,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7216,7 +7386,7 @@
                                             ],
                           "urlFilter":  "||hotporndir.com^"
                       },
-        "id":  425,
+        "id":  435,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7233,7 +7403,7 @@
                                             ],
                           "urlFilter":  "||ifeelmyself.com^"
                       },
-        "id":  426,
+        "id":  436,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7250,7 +7420,7 @@
                                             ],
                           "urlFilter":  "||indianpornvideos.com^"
                       },
-        "id":  427,
+        "id":  437,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7267,7 +7437,7 @@
                                             ],
                           "urlFilter":  "||indiansexmms.net^"
                       },
-        "id":  428,
+        "id":  438,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7284,7 +7454,7 @@
                                             ],
                           "urlFilter":  "||indiaporn.net^"
                       },
-        "id":  429,
+        "id":  439,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7301,7 +7471,7 @@
                                             ],
                           "urlFilter":  "||jav321.com^"
                       },
-        "id":  430,
+        "id":  440,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7318,7 +7488,7 @@
                                             ],
                           "urlFilter":  "||javfinder.la^"
                       },
-        "id":  431,
+        "id":  441,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7335,7 +7505,7 @@
                                             ],
                           "urlFilter":  "||javgiga.com^"
                       },
-        "id":  432,
+        "id":  442,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7352,7 +7522,7 @@
                                             ],
                           "urlFilter":  "||javplayer.com^"
                       },
-        "id":  433,
+        "id":  443,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7369,7 +7539,7 @@
                                             ],
                           "urlFilter":  "||javporn.best^"
                       },
-        "id":  434,
+        "id":  444,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7386,7 +7556,7 @@
                                             ],
                           "urlFilter":  "||javtorrent.re^"
                       },
-        "id":  435,
+        "id":  445,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7403,7 +7573,7 @@
                                             ],
                           "urlFilter":  "||javus.com^"
                       },
-        "id":  436,
+        "id":  446,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7420,7 +7590,7 @@
                                             ],
                           "urlFilter":  "||justswallows.com^"
                       },
-        "id":  437,
+        "id":  447,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7437,7 +7607,7 @@
                                             ],
                           "urlFilter":  "||largehdtube.com^"
                       },
-        "id":  438,
+        "id":  448,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7454,7 +7624,7 @@
                                             ],
                           "urlFilter":  "||largeporntube.com^"
                       },
-        "id":  439,
+        "id":  449,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7471,7 +7641,7 @@
                                             ],
                           "urlFilter":  "||luxuretv.com^"
                       },
-        "id":  440,
+        "id":  450,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7488,7 +7658,7 @@
                                             ],
                           "urlFilter":  "||madthumbs.com^"
                       },
-        "id":  441,
+        "id":  451,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7505,7 +7675,7 @@
                                             ],
                           "urlFilter":  "||masturbation.com^"
                       },
-        "id":  442,
+        "id":  452,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7522,7 +7692,7 @@
                                             ],
                           "urlFilter":  "||maturealbum.com^"
                       },
-        "id":  443,
+        "id":  453,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7539,7 +7709,7 @@
                                             ],
                           "urlFilter":  "||matureclub.com^"
                       },
-        "id":  444,
+        "id":  454,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7556,7 +7726,7 @@
                                             ],
                           "urlFilter":  "||melonstube.com^"
                       },
-        "id":  445,
+        "id":  455,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7573,7 +7743,7 @@
                                             ],
                           "urlFilter":  "||metatube.com^"
                       },
-        "id":  446,
+        "id":  456,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7590,7 +7760,7 @@
                                             ],
                           "urlFilter":  "||milffox.com^"
                       },
-        "id":  447,
+        "id":  457,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7607,7 +7777,7 @@
                                             ],
                           "urlFilter":  "||milftoon.xxx^"
                       },
-        "id":  448,
+        "id":  458,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7624,7 +7794,7 @@
                                             ],
                           "urlFilter":  "||mylust.com^"
                       },
-        "id":  449,
+        "id":  459,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7641,7 +7811,7 @@
                                             ],
                           "urlFilter":  "||myporngay.com^"
                       },
-        "id":  450,
+        "id":  460,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7658,7 +7828,7 @@
                                             ],
                           "urlFilter":  "||mysexgames.com^"
                       },
-        "id":  451,
+        "id":  461,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7675,7 +7845,7 @@
                                             ],
                           "urlFilter":  "||nastyvideotube.com^"
                       },
-        "id":  452,
+        "id":  462,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7692,7 +7862,7 @@
                                             ],
                           "urlFilter":  "||newchloe18.com^"
                       },
-        "id":  453,
+        "id":  463,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7709,7 +7879,7 @@
                                             ],
                           "urlFilter":  "||newgrounds.com^"
                       },
-        "id":  454,
+        "id":  464,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7726,7 +7896,7 @@
                                             ],
                           "urlFilter":  "||nextdoorraw.com^"
                       },
-        "id":  455,
+        "id":  465,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7743,7 +7913,7 @@
                                             ],
                           "urlFilter":  "||nhentai.to^"
                       },
-        "id":  456,
+        "id":  466,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7760,7 +7930,7 @@
                                             ],
                           "urlFilter":  "||niceporn.xxx^"
                       },
-        "id":  457,
+        "id":  467,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7777,7 +7947,7 @@
                                             ],
                           "urlFilter":  "||nightflirt.com^"
                       },
-        "id":  458,
+        "id":  468,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7794,7 +7964,7 @@
                                             ],
                           "urlFilter":  "||noodlemagazine.com^"
                       },
-        "id":  459,
+        "id":  469,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7811,7 +7981,7 @@
                                             ],
                           "urlFilter":  "||nubilefilms.com^"
                       },
-        "id":  460,
+        "id":  470,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7828,7 +7998,7 @@
                                             ],
                           "urlFilter":  "||nubiles.com^"
                       },
-        "id":  461,
+        "id":  471,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7845,7 +8015,7 @@
                                             ],
                           "urlFilter":  "||nubiles.net^"
                       },
-        "id":  462,
+        "id":  472,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7862,7 +8032,7 @@
                                             ],
                           "urlFilter":  "||nudecollect.com^"
                       },
-        "id":  463,
+        "id":  473,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7879,7 +8049,7 @@
                                             ],
                           "urlFilter":  "||nudevoyeurvideos.com^"
                       },
-        "id":  464,
+        "id":  474,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7896,7 +8066,7 @@
                                             ],
                           "urlFilter":  "||nurumassage.com^"
                       },
-        "id":  465,
+        "id":  475,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7913,7 +8083,7 @@
                                             ],
                           "urlFilter":  "||oh-anal.com^"
                       },
-        "id":  466,
+        "id":  476,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7930,7 +8100,7 @@
                                             ],
                           "urlFilter":  "||oldgoesyoung.com^"
                       },
-        "id":  467,
+        "id":  477,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7947,7 +8117,7 @@
                                             ],
                           "urlFilter":  "||onlyporn.to^"
                       },
-        "id":  468,
+        "id":  478,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7964,7 +8134,7 @@
                                             ],
                           "urlFilter":  "||only-teen-blowjobs.com^"
                       },
-        "id":  469,
+        "id":  479,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7981,7 +8151,7 @@
                                             ],
                           "urlFilter":  "||ooporn.com^"
                       },
-        "id":  470,
+        "id":  480,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -7998,7 +8168,7 @@
                                             ],
                           "urlFilter":  "||overflowingbras.com^"
                       },
-        "id":  471,
+        "id":  481,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8015,7 +8185,7 @@
                                             ],
                           "urlFilter":  "||palimas.com^"
                       },
-        "id":  472,
+        "id":  482,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8032,7 +8202,7 @@
                                             ],
                           "urlFilter":  "||pandamovies.pw^"
                       },
-        "id":  473,
+        "id":  483,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8049,7 +8219,7 @@
                                             ],
                           "urlFilter":  "||pervclips.com^"
                       },
-        "id":  474,
+        "id":  484,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8066,7 +8236,7 @@
                                             ],
                           "urlFilter":  "||petardas.com^"
                       },
-        "id":  475,
+        "id":  485,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8083,7 +8253,7 @@
                                             ],
                           "urlFilter":  "||phica.net^"
                       },
-        "id":  476,
+        "id":  486,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8100,7 +8270,7 @@
                                             ],
                           "urlFilter":  "||pinkfineart.com^"
                       },
-        "id":  477,
+        "id":  487,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8117,7 +8287,7 @@
                                             ],
                           "urlFilter":  "||pleasuregirl.net^"
                       },
-        "id":  478,
+        "id":  488,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8134,7 +8304,7 @@
                                             ],
                           "urlFilter":  "||plumperd.com^"
                       },
-        "id":  479,
+        "id":  489,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8151,7 +8321,7 @@
                                             ],
                           "urlFilter":  "||porn555.com^"
                       },
-        "id":  480,
+        "id":  490,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8168,7 +8338,7 @@
                                             ],
                           "urlFilter":  "||pornbb.org^"
                       },
-        "id":  481,
+        "id":  491,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8185,7 +8355,7 @@
                                             ],
                           "urlFilter":  "||porncoven.com^"
                       },
-        "id":  482,
+        "id":  492,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8202,7 +8372,7 @@
                                             ],
                           "urlFilter":  "||porndroids.com^"
                       },
-        "id":  483,
+        "id":  493,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8219,7 +8389,7 @@
                                             ],
                           "urlFilter":  "||porndude.com^"
                       },
-        "id":  484,
+        "id":  494,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8236,7 +8406,7 @@
                                             ],
                           "urlFilter":  "||porneq.com^"
                       },
-        "id":  485,
+        "id":  495,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8253,7 +8423,7 @@
                                             ],
                           "urlFilter":  "||pornerbros.com^"
                       },
-        "id":  486,
+        "id":  496,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8270,7 +8440,7 @@
                                             ],
                           "urlFilter":  "||pornflip.com^"
                       },
-        "id":  487,
+        "id":  497,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8287,7 +8457,7 @@
                                             ],
                           "urlFilter":  "||pornfun.com^"
                       },
-        "id":  488,
+        "id":  498,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8304,7 +8474,7 @@
                                             ],
                           "urlFilter":  "||porngem.com^"
                       },
-        "id":  489,
+        "id":  499,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8321,7 +8491,7 @@
                                             ],
                           "urlFilter":  "||porngo.com^"
                       },
-        "id":  490,
+        "id":  500,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8338,7 +8508,7 @@
                                             ],
                           "urlFilter":  "||pornheed.com^"
                       },
-        "id":  491,
+        "id":  501,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8355,7 +8525,7 @@
                                             ],
                           "urlFilter":  "||pornhits.com^"
                       },
-        "id":  492,
+        "id":  502,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8372,7 +8542,7 @@
                                             ],
                           "urlFilter":  "||pornhub.org^"
                       },
-        "id":  493,
+        "id":  503,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8389,7 +8559,7 @@
                                             ],
                           "urlFilter":  "||pornkai.com^"
                       },
-        "id":  494,
+        "id":  504,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8406,7 +8576,7 @@
                                             ],
                           "urlFilter":  "||pornmaki.com^"
                       },
-        "id":  495,
+        "id":  505,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8423,7 +8593,7 @@
                                             ],
                           "urlFilter":  "||pornmz.com^"
                       },
-        "id":  496,
+        "id":  506,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8440,7 +8610,7 @@
                                             ],
                           "urlFilter":  "||pornner.com^"
                       },
-        "id":  497,
+        "id":  507,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8457,7 +8627,7 @@
                                             ],
                           "urlFilter":  "||pornoeggs.com^"
                       },
-        "id":  498,
+        "id":  508,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8474,7 +8644,7 @@
                                             ],
                           "urlFilter":  "||pornolab.net^"
                       },
-        "id":  499,
+        "id":  509,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8491,7 +8661,7 @@
                                             ],
                           "urlFilter":  "||pornoreino.com^"
                       },
-        "id":  500,
+        "id":  510,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8508,7 +8678,7 @@
                                             ],
                           "urlFilter":  "||pornrabbit.com^"
                       },
-        "id":  501,
+        "id":  511,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8525,7 +8695,7 @@
                                             ],
                           "urlFilter":  "||pornsos.com^"
                       },
-        "id":  502,
+        "id":  512,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8542,7 +8712,7 @@
                                             ],
                           "urlFilter":  "||pornstarslikeitbig.com^"
                       },
-        "id":  503,
+        "id":  513,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8559,7 +8729,7 @@
                                             ],
                           "urlFilter":  "||porntop.com^"
                       },
-        "id":  504,
+        "id":  514,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8576,7 +8746,7 @@
                                             ],
                           "urlFilter":  "||porntry.com^"
                       },
-        "id":  505,
+        "id":  515,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8593,7 +8763,7 @@
                                             ],
                           "urlFilter":  "||porntvee.com^"
                       },
-        "id":  506,
+        "id":  516,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8610,7 +8780,7 @@
                                             ],
                           "urlFilter":  "||pornve.com^"
                       },
-        "id":  507,
+        "id":  517,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8627,7 +8797,7 @@
                                             ],
                           "urlFilter":  "||pornxs.com^"
                       },
-        "id":  508,
+        "id":  518,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8644,7 +8814,7 @@
                                             ],
                           "urlFilter":  "||privatehomeclips.com^"
                       },
-        "id":  509,
+        "id":  519,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8661,7 +8831,7 @@
                                             ],
                           "urlFilter":  "||pussyspace.com^"
                       },
-        "id":  510,
+        "id":  520,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8678,7 +8848,7 @@
                                             ],
                           "urlFilter":  "||pussyspot.net^"
                       },
-        "id":  511,
+        "id":  521,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8695,7 +8865,7 @@
                                             ],
                           "urlFilter":  "||r34anim.com^"
                       },
-        "id":  512,
+        "id":  522,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8712,7 +8882,7 @@
                                             ],
                           "urlFilter":  "||realgfporn.com^"
                       },
-        "id":  513,
+        "id":  523,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8729,7 +8899,7 @@
                                             ],
                           "urlFilter":  "||realitylovers.com^"
                       },
-        "id":  514,
+        "id":  524,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8746,7 +8916,7 @@
                                             ],
                           "urlFilter":  "||realsexpass.com^"
                       },
-        "id":  515,
+        "id":  525,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8763,7 +8933,7 @@
                                             ],
                           "urlFilter":  "||redgifs.com^"
                       },
-        "id":  516,
+        "id":  526,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8780,7 +8950,7 @@
                                             ],
                           "urlFilter":  "||redwap.me^"
                       },
-        "id":  517,
+        "id":  527,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8797,7 +8967,7 @@
                                             ],
                           "urlFilter":  "||ruleporn.com^"
                       },
-        "id":  518,
+        "id":  528,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8814,7 +8984,7 @@
                                             ],
                           "urlFilter":  "||rule34hentai.net^"
                       },
-        "id":  519,
+        "id":  529,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8831,7 +9001,7 @@
                                             ],
                           "urlFilter":  "||sextb.net^"
                       },
-        "id":  520,
+        "id":  530,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8848,7 +9018,7 @@
                                             ],
                           "urlFilter":  "||sextubesearch.com^"
                       },
-        "id":  521,
+        "id":  531,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8865,7 +9035,7 @@
                                             ],
                           "urlFilter":  "||sextvx.com^"
                       },
-        "id":  522,
+        "id":  532,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8882,7 +9052,7 @@
                                             ],
                           "urlFilter":  "||sexu.com^"
                       },
-        "id":  523,
+        "id":  533,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8899,7 +9069,7 @@
                                             ],
                           "urlFilter":  "||sexyandfunny.com^"
                       },
-        "id":  524,
+        "id":  534,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8916,7 +9086,7 @@
                                             ],
                           "urlFilter":  "||sexygirlsalbum.com^"
                       },
-        "id":  525,
+        "id":  535,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8933,7 +9103,7 @@
                                             ],
                           "urlFilter":  "||shemalestar.com^"
                       },
-        "id":  526,
+        "id":  536,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8950,7 +9120,7 @@
                                             ],
                           "urlFilter":  "||shemales.com^"
                       },
-        "id":  527,
+        "id":  537,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8967,7 +9137,7 @@
                                             ],
                           "urlFilter":  "||shemalestube.com^"
                       },
-        "id":  528,
+        "id":  538,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -8984,7 +9154,7 @@
                                             ],
                           "urlFilter":  "||shooshtime.com^"
                       },
-        "id":  529,
+        "id":  539,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9001,7 +9171,7 @@
                                             ],
                           "urlFilter":  "||silverdaddies.com^"
                       },
-        "id":  530,
+        "id":  540,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9018,7 +9188,7 @@
                                             ],
                           "urlFilter":  "||slutroulette.com^"
                       },
-        "id":  531,
+        "id":  541,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9035,7 +9205,7 @@
                                             ],
                           "urlFilter":  "||smutty.com^"
                       },
-        "id":  532,
+        "id":  542,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9052,7 +9222,7 @@
                                             ],
                           "urlFilter":  "||tabooporns.com^"
                       },
-        "id":  533,
+        "id":  543,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9069,7 +9239,7 @@
                                             ],
                           "urlFilter":  "||teensnow.com^"
                       },
-        "id":  534,
+        "id":  544,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9086,7 +9256,7 @@
                                             ],
                           "urlFilter":  "||theporndude.com^"
                       },
-        "id":  535,
+        "id":  545,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9103,7 +9273,7 @@
                                             ],
                           "urlFilter":  "||thothub.tv^"
                       },
-        "id":  536,
+        "id":  546,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9120,7 +9290,7 @@
                                             ],
                           "urlFilter":  "||titsintops.com^"
                       },
-        "id":  537,
+        "id":  547,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9137,7 +9307,7 @@
                                             ],
                           "urlFilter":  "||tktube.com^"
                       },
-        "id":  538,
+        "id":  548,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9154,7 +9324,7 @@
                                             ],
                           "urlFilter":  "||tokyomotion.net^"
                       },
-        "id":  539,
+        "id":  549,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9171,7 +9341,7 @@
                                             ],
                           "urlFilter":  "||tubedupe.com^"
                       },
-        "id":  540,
+        "id":  550,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9188,7 +9358,7 @@
                                             ],
                           "urlFilter":  "||tubepornstars.com^"
                       },
-        "id":  541,
+        "id":  551,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9205,7 +9375,7 @@
                                             ],
                           "urlFilter":  "||tuberel.com^"
                       },
-        "id":  542,
+        "id":  552,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9222,7 +9392,7 @@
                                             ],
                           "urlFilter":  "||tubevector.com^"
                       },
-        "id":  543,
+        "id":  553,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9239,7 +9409,7 @@
                                             ],
                           "urlFilter":  "||tumbex.com^"
                       },
-        "id":  544,
+        "id":  554,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9256,7 +9426,7 @@
                                             ],
                           "urlFilter":  "||twistysnetwork.com^"
                       },
-        "id":  545,
+        "id":  555,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9273,7 +9443,7 @@
                                             ],
                           "urlFilter":  "||updatetube.com^"
                       },
-        "id":  546,
+        "id":  556,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9290,7 +9460,7 @@
                                             ],
                           "urlFilter":  "||upornia.com^"
                       },
-        "id":  547,
+        "id":  557,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9307,7 +9477,7 @@
                                             ],
                           "urlFilter":  "||vidz.com^"
                       },
-        "id":  548,
+        "id":  558,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9324,7 +9494,7 @@
                                             ],
                           "urlFilter":  "||vintageerotica.com^"
                       },
-        "id":  549,
+        "id":  559,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9341,7 +9511,7 @@
                                             ],
                           "urlFilter":  "||vivud.com^"
                       },
-        "id":  550,
+        "id":  560,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9358,7 +9528,7 @@
                                             ],
                           "urlFilter":  "||watchmygf.me^"
                       },
-        "id":  551,
+        "id":  561,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9375,7 +9545,7 @@
                                             ],
                           "urlFilter":  "||watchmyexgf.net^"
                       },
-        "id":  552,
+        "id":  562,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9392,7 +9562,7 @@
                                             ],
                           "urlFilter":  "||wetplace.com^"
                       },
-        "id":  553,
+        "id":  563,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9409,7 +9579,7 @@
                                             ],
                           "urlFilter":  "||wetpussy.com^"
                       },
-        "id":  554,
+        "id":  564,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9426,7 +9596,7 @@
                                             ],
                           "urlFilter":  "||worldsex.com^"
                       },
-        "id":  555,
+        "id":  565,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9443,7 +9613,7 @@
                                             ],
                           "urlFilter":  "||xcafe.com^"
                       },
-        "id":  556,
+        "id":  566,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9460,7 +9630,7 @@
                                             ],
                           "urlFilter":  "||xerotica.com^"
                       },
-        "id":  557,
+        "id":  567,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9477,7 +9647,7 @@
                                             ],
                           "urlFilter":  "||xfantasy.com^"
                       },
-        "id":  558,
+        "id":  568,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9494,7 +9664,7 @@
                                             ],
                           "urlFilter":  "||xgroovy.com^"
                       },
-        "id":  559,
+        "id":  569,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9511,7 +9681,7 @@
                                             ],
                           "urlFilter":  "||xmegadrive.com^"
                       },
-        "id":  560,
+        "id":  570,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9528,7 +9698,7 @@
                                             ],
                           "urlFilter":  "||xmoviesforyou.com^"
                       },
-        "id":  561,
+        "id":  571,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9545,7 +9715,7 @@
                                             ],
                           "urlFilter":  "||xpee.com^"
                       },
-        "id":  562,
+        "id":  572,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9562,7 +9732,7 @@
                                             ],
                           "urlFilter":  "||xtapes.to^"
                       },
-        "id":  563,
+        "id":  573,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9579,7 +9749,7 @@
                                             ],
                           "urlFilter":  "||xtwisted.com^"
                       },
-        "id":  564,
+        "id":  574,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9596,7 +9766,7 @@
                                             ],
                           "urlFilter":  "||xxbrits.com^"
                       },
-        "id":  565,
+        "id":  575,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9613,7 +9783,7 @@
                                             ],
                           "urlFilter":  "||xxxfiles.com^"
                       },
-        "id":  566,
+        "id":  576,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9630,7 +9800,7 @@
                                             ],
                           "urlFilter":  "||xxxymovies.com^"
                       },
-        "id":  567,
+        "id":  577,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9647,7 +9817,7 @@
                                             ],
                           "urlFilter":  "||youramateurporn.com^"
                       },
-        "id":  568,
+        "id":  578,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9664,7 +9834,7 @@
                                             ],
                           "urlFilter":  "||yourdailypornstars.com^"
                       },
-        "id":  569,
+        "id":  579,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9681,7 +9851,7 @@
                                             ],
                           "urlFilter":  "||yourdailypornvideos.com^"
                       },
-        "id":  570,
+        "id":  580,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {
@@ -9698,7 +9868,7 @@
                                             ],
                           "urlFilter":  "||zporn.com^"
                       },
-        "id":  571,
+        "id":  581,
         "action":  {
                        "type":  "redirect",
                        "redirect":  {

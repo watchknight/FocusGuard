@@ -33,7 +33,7 @@
         <section class="card">
             <h2>Custom Blocklist</h2>
             <div class="domain-input-group">
-                <input type="text" id="new-domain" placeholder="e.g. example.com">
+                <input type="text" id="new-domain" placeholder="e.g. example.com" aria-label="Add custom domain to block">
                 <button id="add-domain-btn" class="btn btn-primary">Add Domain</button>
             </div>
             
@@ -77,7 +77,7 @@
         <div class="modal-content">
             <h2>Import Domains</h2>
             <p>Paste domains here, one per line:</p>
-            <textarea id="import-textarea" rows="10" placeholder="example.com&#10;reddit.com"></textarea>
+            <textarea id="import-textarea" rows="10" placeholder="example.com&#10;reddit.com" aria-label="Paste domains to import, one per line"></textarea>
             <div class="modal-actions">
                 <button id="cancel-import" class="btn btn-secondary">Cancel</button>
                 <button id="confirm-import" class="btn btn-primary">Import</button>

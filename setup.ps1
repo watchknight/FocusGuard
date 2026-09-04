@@ -235,6 +235,14 @@ foreach ($browser in $browsers) {
         if (Test-Path $sourcesPath) { Remove-Item $sourcesPath -Recurse -Force -ErrorAction SilentlyContinue }
     }
 
+    # Always enforce SafeSearch & YouTube Restricted Mode via enterprise policy
+    Set-ItemProperty -Path $browser.Path -Name "ForceGoogleSafeSearch" -Value 1 -Type DWord -Force
+    Set-ItemProperty -Path $browser.Path -Name "ForceYouTubeSafetyMode" -Value 2 -Type DWord -Force
+    if ($browser.Name -eq "Edge") {
+        Set-ItemProperty -Path $browser.Path -Name "ForceBingSafeSearch" -Value 1 -Type DWord -Force
+    }
+    Write-OK "$($browser.Name): SafeSearch & YouTube Restricted Mode enforced via policy"
+
     # Optional: Disable incognito
     if ($DisableIncognito) {
         Set-ItemProperty -Path $browser.Path -Name "IncognitoModeAvailability" -Value 1 -Type DWord -Force
@@ -271,7 +279,7 @@ if (-not (Test-Path $hostsBackup)) {
 # Load blocklist domains from blocklist.js
 $blocklistFile = Join-Path $PSScriptRoot "blocklist.js"
 $blocklistContent = Get-Content $blocklistFile -Raw -Encoding UTF8
-$domainMatches = [regex]::Matches($blocklistContent, "'([^']+\.(?:com|net|org|tv|xxx|co|io|me|cc|ch|de|jp|to|la|su|nl|vip|sex|tube|party|pw|link|info|best|re|sh|chat|fans))'")
+$domainMatches = [regex]::Matches($blocklistContent, "'([a-z0-9-]+(?:\.[a-z0-9-]+)+)'")
 $domains = @()
 $seen = @{}
 foreach ($m in $domainMatches) {
@@ -307,6 +315,15 @@ foreach ($d in $domains) {
     $hostsBlock += "0.0.0.0 $d"
     $hostsBlock += "0.0.0.0 www.$d"
 }
+$hostsBlock += ""
+$hostsBlock += "# SafeSearch VIP mappings (forces SafeSearch in ALL browsers at OS level)"
+$hostsBlock += "216.239.38.120 google.com"
+$hostsBlock += "216.239.38.120 www.google.com"
+$hostsBlock += "204.79.197.220 bing.com"
+$hostsBlock += "204.79.197.220 www.bing.com"
+$hostsBlock += "216.239.38.120 youtube.com"
+$hostsBlock += "216.239.38.120 www.youtube.com"
+$hostsBlock += "216.239.38.120 m.youtube.com"
 $hostsBlock += ""
 $hostsBlock += $endMarker
 

@@ -130,6 +130,20 @@ function disableDoh() {
 }
 
 /**
+ * Enforce SafeSearch across Google, Bing, and YouTube via enterprise policy.
+ */
+function enableSafeSearchPolicies() {
+  for (const [browser, basePath] of Object.entries(POLICY_PATHS)) {
+    regCommand(`add "${basePath}" /v "ForceGoogleSafeSearch" /t REG_DWORD /d 1 /f`);
+    regCommand(`add "${basePath}" /v "ForceYouTubeSafetyMode" /t REG_DWORD /d 2 /f`);
+    if (browser === 'edge') {
+      regCommand(`add "${basePath}" /v "ForceBingSafeSearch" /t REG_DWORD /d 1 /f`);
+    }
+    console.log(`[Policies] SafeSearch policies enabled for ${browser}`);
+  }
+}
+
+/**
  * Apply all recommended policies.
  * @param {Object} options
  * @param {string} options.extensionId — Extension ID (optional)
@@ -144,6 +158,9 @@ function applyAllPolicies(options = {}) {
 
   // Always disable DoH to prevent DNS bypass
   disableDoh();
+
+  // Always enforce SafeSearch for Google, Bing, and YouTube
+  enableSafeSearchPolicies();
 
   // Optional policies
   if (options.disableIncognito) {
@@ -170,6 +187,13 @@ function verifyPolicies(extensionId) {
     if (dohMode !== 'off') {
       results.valid = false;
       results.issues.push(`${browser}: DnsOverHttpsMode is "${dohMode}" (expected "off")`);
+    }
+
+    // Check SafeSearch is enabled
+    const safeSearch = regQuery(basePath, 'ForceGoogleSafeSearch');
+    if (safeSearch !== '0x1' && safeSearch !== '1') {
+      results.valid = false;
+      results.issues.push(`${browser}: ForceGoogleSafeSearch missing or disabled`);
     }
 
     // Check force-install is in place if domain-joined
@@ -201,6 +225,10 @@ function removeAllPolicies() {
     regCommand(`delete "${basePath}" /v "DeveloperToolsAvailability" /f`);
     // Remove DoH restriction
     regCommand(`delete "${basePath}" /v "DnsOverHttpsMode" /f`);
+    // Remove SafeSearch policies
+    regCommand(`delete "${basePath}" /v "ForceGoogleSafeSearch" /f`);
+    regCommand(`delete "${basePath}" /v "ForceYouTubeSafetyMode" /f`);
+    regCommand(`delete "${basePath}" /v "ForceBingSafeSearch" /f`);
     console.log(`[Policies] Policies removed for ${browser}`);
   }
 }
@@ -210,6 +238,7 @@ module.exports = {
   disableIncognito,
   disableDevTools,
   disableDoh,
+  enableSafeSearchPolicies,
   applyAllPolicies,
   verifyPolicies,
   removeAllPolicies,

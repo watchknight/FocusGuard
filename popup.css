@@ -46,11 +46,21 @@ header {
 .settings-btn {
   cursor: pointer;
   font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  line-height: 1;
   transition: transform 0.2s ease;
 }
 
 .settings-btn:hover {
   transform: rotate(45deg);
+}
+
+.settings-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  border-radius: 4px;
 }
 
 main {

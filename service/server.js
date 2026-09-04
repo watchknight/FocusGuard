@@ -277,7 +277,7 @@ ${appsXml}
     }
 
     // 404 for unmatched routes
-    jsonResponse(res, 404, { error: 'Not found', path });
+    jsonResponse(res, 404, { error: 'Not found', path: pathname });
   } catch (err) {
     console.error('[Server] Error handling request:', err);
     jsonResponse(res, 500, { error: err.message });

@@ -60,6 +60,17 @@ function buildHostsBlock(domains) {
     lines.push(`0.0.0.0 www.${domain}`);
   }
 
+  // SafeSearch VIP mappings (forces SafeSearch across ALL browsers at OS network layer)
+  lines.push('');
+  lines.push('# SafeSearch VIP mappings');
+  lines.push('216.239.38.120 google.com');
+  lines.push('216.239.38.120 www.google.com');
+  lines.push('204.79.197.220 bing.com');
+  lines.push('204.79.197.220 www.bing.com');
+  lines.push('216.239.38.120 youtube.com');
+  lines.push('216.239.38.120 www.youtube.com');
+  lines.push('216.239.38.120 m.youtube.com');
+
   lines.push('', END_MARKER);
   return lines.join('\n');
 }
@@ -105,6 +116,11 @@ function verifyHostsEntries(domains) {
       valid: false, 
       reason: `Hosts entries count mismatch: found ${entryCount}, expected at least ${expectedMinCount}` 
     };
+  }
+
+  // Verify SafeSearch VIP mappings are present
+  if (!section.includes('216.239.38.120 www.google.com')) {
+    return { valid: false, reason: 'Google SafeSearch VIP mapping missing from hosts file' };
   }
 
   // 2. Check representative sample of domains across the list

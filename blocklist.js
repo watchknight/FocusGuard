@@ -295,6 +295,14 @@ const BlocklistData = (function () {
     'leolist.cc',
 
     // === Reddit-like / Social (Adult-specific) ===
+    'reddit.com',
+    'redd.it',
+    'redditmedia.com',
+    'redditstatic.com',
+    'twitter.com',
+    'x.com',
+    't.co',
+    'twimg.com',
     'scrolller.com',
     'lewdweb.net',
     'coomer.su',
