@@ -130,12 +130,13 @@ function disableDoh() {
 }
 
 /**
- * Enforce SafeSearch across Google, Bing, and YouTube via enterprise policy.
+ * Enforce SafeSearch across Google and Bing via enterprise policy.
+ * (YouTube safety mode is explicitly NOT enforced so music/songs play normally).
  */
 function enableSafeSearchPolicies() {
   for (const [browser, basePath] of Object.entries(POLICY_PATHS)) {
     regCommand(`add "${basePath}" /v "ForceGoogleSafeSearch" /t REG_DWORD /d 1 /f`);
-    regCommand(`add "${basePath}" /v "ForceYouTubeSafetyMode" /t REG_DWORD /d 2 /f`);
+    regCommand(`delete "${basePath}" /v "ForceYouTubeSafetyMode" /f`);
     if (browser === 'edge') {
       regCommand(`add "${basePath}" /v "ForceBingSafeSearch" /t REG_DWORD /d 1 /f`);
     }

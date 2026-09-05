@@ -73,9 +73,9 @@
     </div>
 
     <!-- Import Modal -->
-    <div id="import-modal" class="modal">
+    <div id="import-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="import-modal-title">
         <div class="modal-content">
-            <h2>Import Domains</h2>
+            <h2 id="import-modal-title">Import Domains</h2>
             <p>Paste domains here, one per line:</p>
             <textarea id="import-textarea" rows="10" placeholder="example.com&#10;reddit.com" aria-label="Paste domains to import, one per line"></textarea>
             <div class="modal-actions">
@@ -86,7 +86,7 @@
     </div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="toast">Settings saved successfully!</div>
+    <div id="toast" class="toast" role="status" aria-live="polite">Settings saved successfully!</div>
 
     <script src="settings.js"></script>
 </body>

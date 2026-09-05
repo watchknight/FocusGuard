@@ -67,9 +67,6 @@ function buildHostsBlock(domains) {
   lines.push('216.239.38.120 www.google.com');
   lines.push('204.79.197.220 bing.com');
   lines.push('204.79.197.220 www.bing.com');
-  lines.push('216.239.38.120 youtube.com');
-  lines.push('216.239.38.120 www.youtube.com');
-  lines.push('216.239.38.120 m.youtube.com');
 
   lines.push('', END_MARKER);
   return lines.join('\n');
@@ -152,6 +149,7 @@ function applyHostsEntries(domains) {
     const block = buildHostsBlock(domains);
     const newContent = content.trimEnd() + '\n\n' + block + '\n';
 
+    try { fs.chmodSync(HOSTS_FILE, 0o666); } catch {}
     fs.writeFileSync(HOSTS_FILE, newContent, 'utf8');
     console.log(`[Hosts] Applied ${domains.length} domain entries`);
 
@@ -172,6 +170,7 @@ function removeHostsEntries() {
   try {
     let content = readHostsFile();
     content = stripFocusGuardSection(content);
+    try { fs.chmodSync(HOSTS_FILE, 0o666); } catch {}
     fs.writeFileSync(HOSTS_FILE, content.trimEnd() + '\n', 'utf8');
     flushDns();
     console.log('[Hosts] Entries removed');

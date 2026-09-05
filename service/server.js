@@ -218,7 +218,15 @@ ${appsXml}
             'Content-Type': 'application/x-chrome-extension',
             'Access-Control-Allow-Origin': '*',
           });
-          fs.createReadStream(crxPath).pipe(res);
+          const stream = fs.createReadStream(crxPath);
+          stream.pipe(res);
+          req.on('close', () => stream.destroy());
+          stream.on('error', (err) => {
+            console.error('[Server] CRX stream error:', err.message);
+            if (!res.headersSent) {
+              jsonResponse(res, 500, { error: 'Failed to stream package' });
+            }
+          });
         } else {
           jsonResponse(res, 404, { error: 'CRX package not found' });
         }
@@ -229,11 +237,30 @@ ${appsXml}
       case '/enable': {
         if (method !== 'POST') break;
         cooldownManager.enableProtection();
-        // Re-apply all layers
+        // Clear require cache to ensure updated hosts-manager and policies are picked up
+        try {
+          delete require.cache[require.resolve('./hosts-manager')];
+          delete require.cache[require.resolve('./policies')];
+          delete require.cache[require.resolve('./blocklist')];
+          delete require.cache[require.resolve('../blocklist.js')];
+        } catch (e) {}
+        const freshHosts = require('./hosts-manager');
+        const freshPolicies = require('./policies');
         const domains = watchdog.getAllDomains();
-        hostsManager.applyHostsEntries(domains);
+        freshHosts.applyHostsEntries(domains);
+        freshPolicies.applyAllPolicies();
         dnsManager.applyDns();
         jsonResponse(res, 200, { ok: true, message: 'Protection re-enabled across all layers.' });
+        return;
+      }
+
+      // === Restart Service ===
+      case '/restart': {
+        if (method !== 'POST') break;
+        jsonResponse(res, 200, { ok: true, message: 'Restarting service...' });
+        setTimeout(() => {
+          process.exit(0);
+        }, 300);
         return;
       }
 
@@ -283,8 +310,19 @@ ${appsXml}
       // === Force re-check all layers ===
       case '/verify': {
         if (method !== 'POST') break;
+        try {
+          delete require.cache[require.resolve('./hosts-manager')];
+          delete require.cache[require.resolve('./policies')];
+          delete require.cache[require.resolve('./blocklist')];
+          delete require.cache[require.resolve('../blocklist.js')];
+        } catch (e) {}
+        const freshHosts = require('./hosts-manager');
+        const freshPolicies = require('./policies');
+        const domains = watchdog.getAllDomains();
+        freshHosts.applyHostsEntries(domains);
+        freshPolicies.applyAllPolicies();
         watchdog.runCheck();
-        jsonResponse(res, 200, { ok: true, message: 'All layers verified.' });
+        jsonResponse(res, 200, { ok: true, message: 'All layers reloaded and verified.' });
         return;
       }
 

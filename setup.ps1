@@ -235,13 +235,13 @@ foreach ($browser in $browsers) {
         if (Test-Path $sourcesPath) { Remove-Item $sourcesPath -Recurse -Force -ErrorAction SilentlyContinue }
     }
 
-    # Always enforce SafeSearch & YouTube Restricted Mode via enterprise policy
+    # Always enforce SafeSearch for Google and Edge via enterprise policy
     Set-ItemProperty -Path $browser.Path -Name "ForceGoogleSafeSearch" -Value 1 -Type DWord -Force
-    Set-ItemProperty -Path $browser.Path -Name "ForceYouTubeSafetyMode" -Value 2 -Type DWord -Force
+    Remove-ItemProperty -Path $browser.Path -Name "ForceYouTubeSafetyMode" -ErrorAction SilentlyContinue
     if ($browser.Name -eq "Edge") {
         Set-ItemProperty -Path $browser.Path -Name "ForceBingSafeSearch" -Value 1 -Type DWord -Force
     }
-    Write-OK "$($browser.Name): SafeSearch & YouTube Restricted Mode enforced via policy"
+    Write-OK "$($browser.Name): SafeSearch enforced via policy (YouTube unrestricted)"
 
     # Optional: Disable incognito
     if ($DisableIncognito) {
@@ -321,9 +321,6 @@ $hostsBlock += "216.239.38.120 google.com"
 $hostsBlock += "216.239.38.120 www.google.com"
 $hostsBlock += "204.79.197.220 bing.com"
 $hostsBlock += "204.79.197.220 www.bing.com"
-$hostsBlock += "216.239.38.120 youtube.com"
-$hostsBlock += "216.239.38.120 www.youtube.com"
-$hostsBlock += "216.239.38.120 m.youtube.com"
 $hostsBlock += ""
 $hostsBlock += $endMarker
 

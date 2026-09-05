@@ -440,7 +440,7 @@ async function resetStatsIfNeeded() {
 // =====================================================================
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   // Validate sender: ensure request is strictly from within this extension
-  if (sender.id && sender.id !== chrome.runtime.id) {
+  if (!sender.id || sender.id !== chrome.runtime.id) {
     console.warn('[FocusGuard] Rejected message from unauthorized sender ID:', sender.id);
     sendResponse({ error: 'Unauthorized sender' });
     return false;

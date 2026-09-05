@@ -181,6 +181,9 @@ foreach ($browser in $browsers) {
         Remove-ItemProperty -Path $browser.Path -Name "DnsOverHttpsMode" -ErrorAction SilentlyContinue
         Remove-ItemProperty -Path $browser.Path -Name "IncognitoModeAvailability" -ErrorAction SilentlyContinue
         Remove-ItemProperty -Path $browser.Path -Name "DeveloperToolsAvailability" -ErrorAction SilentlyContinue
+        Remove-ItemProperty -Path $browser.Path -Name "ForceGoogleSafeSearch" -ErrorAction SilentlyContinue
+        Remove-ItemProperty -Path $browser.Path -Name "ForceYouTubeSafetyMode" -ErrorAction SilentlyContinue
+        Remove-ItemProperty -Path $browser.Path -Name "ForceBingSafeSearch" -ErrorAction SilentlyContinue
 
         $forcelistPath = Join-Path $browser.Path "ExtensionInstallForcelist"
         if (Test-Path $forcelistPath) {

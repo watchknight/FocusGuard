@@ -17,7 +17,7 @@
   <main>
     <section class="status-section">
       <div class="status-indicator" id="statusIndicator"></div>
-      <h2 id="statusText">Protection ON</h2>
+      <h2 id="statusText" aria-live="polite">Protection ON</h2>
     </section>
 
     <section class="stats-section">
@@ -45,7 +45,7 @@
 
       <!-- State 2: Cooldown active -->
       <div id="stateCooldown" class="state-panel hidden">
-        <div class="timer-display" id="cooldownTimer">00:00:00</div>
+        <div class="timer-display" id="cooldownTimer" role="timer" aria-live="polite">00:00:00</div>
         <button id="cancelBtn" class="btn-primary">Cancel Disable Request</button>
       </div>
 
